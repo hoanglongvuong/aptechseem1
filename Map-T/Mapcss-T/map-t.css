@@ -1,0 +1,9 @@
+.font-T {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.textcolor-T {
+    color: #ad974f;
+}
