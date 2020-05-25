@@ -1,0 +1,51 @@
+a:hover{
+    text-decoration: none;
+}
+.nav-menu .navbar-collapse li{
+    display: inline;
+    list-style: none;
+
+}
+.nav-menu .navbar-collapse a{
+    color: white;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #061c6af2;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nav-menu{
+    z-index: 999;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 0.1px lightgrey;
+}
+.carousel-caption{
+    color:#061c6af2;
+    position: absolute;
+    top: 45%;
+}
+.carousel-caption a{
+    color: black;
+    padding: 20px;
+    background: lightgrey;
+    border-radius: 10px;
+}
+.carousel-caption h3{
+    font-family:  'Great Vibes', Helvetica, sans-serif;
+}
+.hr{
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 1px;
+    background: goldenrod;
+}
+.contact-site .row img{
+    vertical-align: middle;
+    width: 75%;
+}
