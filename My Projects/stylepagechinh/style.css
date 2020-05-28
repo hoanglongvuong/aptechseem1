@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+.k-explore{
+    text-align: center;
+}
+body{
+    font-family: sans-serif;
+}
+.k-title{
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    width: 100%;
+    margin: 15px 0 0 0;
+    display: block;
+}
+.line-gold{
+    background-color: #ad974f;
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    margin: 0 auto;
+}.k-title-2{
+    color: #000;
+    font-size: 40px;
+    width: 100%;
+    margin: 20px 0 10px 0;
+    line-height: 1.2em;
+    font-weight: 500;
+    display: inline-block;
+}
+.k-gold{
+    color: #ad974f;
+}
+.k-title-3{
+    font-size: 18px;
+    color: #3f382e;
+    font-weight: 200;
+    margin: 10px 0;
+    line-height: 1.8em;
+    width: 100%;
+}
+.k-mt-50{
+    margin-top: 50px;
+    
+}
