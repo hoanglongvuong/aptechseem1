@@ -1,3 +1,4 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
 a:hover{
     text-decoration: none;
 }
@@ -17,15 +18,21 @@ a:hover{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.navbar-fixed-top.scrolled{
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+.navbar-fixed-top.scrolled .navbar-light{
+    color:rgb(226, 149, 149);
+  }
 .nav-menu{
     z-index: 999;
     overflow-x: hidden;
     position: fixed;
     width: 100%;
-    border-bottom: solid 0.1px lightgrey;
 }
 .carousel-caption{
-    color:#061c6af2;
+    color:#ad974f;
     position: absolute;
     top: 45%;
 }
@@ -43,7 +50,7 @@ a:hover{
     margin-top: 20px;
     width: 80%;
     height: 1px;
-    background: goldenrod;
+    background: #ad974f;
 }
 .contact-site .row img{
     vertical-align: middle;
