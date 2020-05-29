@@ -60,3 +60,24 @@
     display: inline-block;
     margin-top: 20px;
 }
+
+.style-pFT {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.spft:link {
+    text-decoration: none;
+}
+
+.spft:visited {
+    color: black;
+}
+
+.spft:hover {
+    color: #ad974f;
+}
+
+.color-t {
+    color: #ad974f;
+}
