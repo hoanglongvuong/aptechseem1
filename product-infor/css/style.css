@@ -1,0 +1,52 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+a:hover{
+    text-decoration: none;
+}
+.nav-menu .navbar-collapse li{
+    display: inline;
+    list-style: none;
+
+}
+.nav-menu .navbar-collapse a{
+    color: black;
+    font-size: 23px;
+    padding-right: 25px;
+}
+.navbar-fixed-top.scrolled{
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+.navbar-fixed-top.scrolled .navbar-light{
+    color:rgb(226, 149, 149);
+  }
+.nav-menu{
+    z-index: 999;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+}
+.carousel-caption{
+    color:#fff;
+    position: absolute;
+    top: 45%;
+}
+.carousel-caption a{
+    color: black;
+    padding: 20px;
+    background: lightgrey;
+    border-radius: 10px;
+}
+.carousel-caption h3{
+    font-family:  'Great Vibes', Helvetica, sans-serif;
+}
+.hr{
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 1px;
+    background: #ad974f;
+}
+.contact-site .row img{
+    vertical-align: middle;
+    width: 75%;
+}
