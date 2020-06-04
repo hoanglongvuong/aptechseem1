@@ -46,6 +46,10 @@
     border-radius: 10px;
     font-size: 15px;
 }
+.product-infor .left .buy:hover{
+  background: #ad974f!important;
+  color: black;
+}
 /* star */
 div.stars {
     width: 270px;
