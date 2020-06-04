@@ -40,6 +40,34 @@
                         <li><a href="#">product</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                        <li class="log-in"><a href="#"><i class="fa fa-user"></i></a>
+                            <ul class="sign-up-page">
+                                <li>
+                                    <script type="text/javascript">
+                                        //đăng nhập form
+                                        function getName(){
+                                            var username = document.getElementById("username").value;
+                                            var password = document.getElementById("password").value;
+                                            if( username == "admin" && password == "123"){
+                                                alert("ok");
+                                                window.location = "https://www.google.com/webhp?hl=vi&sa=X&ved=0ahUKEwjV9f3z67DpAhUkGKYKHZz6DxkQPAgH";
+                                            }
+                                            else{
+                                                alert("try it again !");
+                                            }
+                                        }
+                                    </script>
+                                    <div class="sign-up">
+                                        <h5 style="text-align: center;">Welcome</h5>
+                                        <form>
+                                            Log in<input id="username" type="text" style="width: 100%; border-radius: 20px">
+                                            Password<input id="password" type="password" style="width: 100%; border-radius: 20px;">
+                                            <input type="button" value="login" onclick="getName();" style="border-radius: 20px; width: 80%; margin-top: 20px; margin-left: 35px;">
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>

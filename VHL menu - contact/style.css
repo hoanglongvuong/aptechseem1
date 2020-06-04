@@ -50,3 +50,28 @@ a:hover{
     vertical-align: middle;
     width: 75%;
 }
+/* sign-up */
+.navbar-collapse .log-in{
+    position: relative;
+    position: fixed;
+}
+.navbar-collapse .log-in .sign-up-page{
+    display: none;
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: -335px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #ddd;
+    border-radius: 20px;
+}
+.navbar-collapse .log-in:hover .sign-up-page{
+    display: block;
+    z-index: 1000;
+}
+.navbar-collapse .sign-up-page .sign-up{
+    width: 100%;
+    padding: 20px;
+}
