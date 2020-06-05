@@ -26,14 +26,17 @@ a:hover{
     width: 100%;
 }
 .carousel-caption{
-    color:#fff;
+    color:rgba(233, 175, 16, 0.39);
     position: absolute;
     top: 45%;
 }
 .carousel-caption a{
-    color: black;
-    padding: 20px;
-    background: lightgrey;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #ad974f;
     border-radius: 10px;
 }
 .carousel-caption h3{
@@ -49,4 +52,29 @@ a:hover{
 .contact-site .row img{
     vertical-align: middle;
     width: 75%;
+}
+/* sign-up */
+.navbar-collapse .log-in{
+    position: relative;
+    position: fixed;
+}
+.navbar-collapse .log-in .sign-up-page{
+    display: none;
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: -335px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #dddddd94;
+    border-radius: 20px;
+}
+.navbar-collapse .log-in:hover .sign-up-page{
+    display: block;
+    z-index: 1000;
+}
+.navbar-collapse .sign-up-page .sign-up{
+    width: 100%;
+    padding: 20px;
 }
