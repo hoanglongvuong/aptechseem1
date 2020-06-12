@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: Montserrat, sans-serif;
 }
 .mt-100{
     margin-top: 100px;
@@ -146,6 +146,48 @@ body{
     text-align: center;
     border-radius: 6px;
 }
+.animated:hover{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes pulse{
+    from{
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    
+    50%{
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to{
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);   
+    }
+}
+@keyframes pulse{
+    from{
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    
+    50%{
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to{
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);   
+    }
+}
+.pulse:hover{
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
 .infor-box h5{
     margin: 20px 0;
     font-size: 12px;
@@ -182,6 +224,11 @@ body{
 .timeline-container{
     width: 60%;
     margin: 20px auto;
+}
+.timeline-item{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 .line-vertical{
     border-left-width: 1px;
