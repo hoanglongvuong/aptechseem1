@@ -142,9 +142,15 @@ $(document).ready(function() {
                         left = 0;
                         totalHeight = totalHeight + $('.guide').height() + 20;
                     }
-                    $('#grid').height(totalHeight + $('.guide').height());
+                    $('#grid').height(totalHeight + 400 - $('.guide').height());
                 }
             }
         }
     }
 })
+$(function() {
+    $(document).scroll(function() {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
