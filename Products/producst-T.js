@@ -133,7 +133,7 @@ $(document).ready(function() {
                         totalHeight = totalHeight + $('.guide').height() + 20;
 
                     } else if ((i + 1) % 2 === 0 && projects.length > 2 && $(window).width() < 700 && $(window).width() >= 480) {
-                        top = top + $('.guide').height() + 0;
+                        top = top + $('.guide').height() + 20;
                         left = 0;
                         totalHeight = totalHeight + $('.guide').height() + 20;
 
@@ -142,7 +142,7 @@ $(document).ready(function() {
                         left = 0;
                         totalHeight = totalHeight + $('.guide').height() + 20;
                     }
-                    $('#grid').height(totalHeight + 400 - $('.guide').height());
+                    $('#grid').height(totalHeight + $('.guide').height() - 400);
                 }
             }
         }

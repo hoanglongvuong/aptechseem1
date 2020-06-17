@@ -1,8 +1,8 @@
         .container-fluid {
-            background-image: url(../Products/imgpro-T/pexels-photo\ -\ Copy\ -\ Copy.jpg);
             height: 285px;
             background-size: cover;
             background-position: center;
+            background-image: url("../Products/imgpro-T/pexels-photo\ -\ Copy\ -\ Copy.jpg");
         }
         
         .produtcs-T {
@@ -22,17 +22,20 @@
             margin-top: 100px;
         }
         
+        .k-white {
+            color: white;
+        }
+        
         .k-gold {
             color: #ad974f;
         }
         
         .k-gold:visited {
-            text-decoration: none;
             color: #ad974f;
         }
         
-        .k-white {
-            color: #fff;
+        .cardproT .btnproT a:link {
+            text-decoration: none;
         }
         
         .k-title {
@@ -253,17 +256,59 @@
             transition: 2.8s;
         }
         
+        .animated:hover {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        
+        @-webkit-keyframes pulse {
+            from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        
+        @keyframes pulse {
+            from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        
+        .pulse:hover {
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+        }
+        
         .btnproT {
             background-color: black;
-            font-size: 13px;
-            padding: 10px;
+            padding: 15px;
             border: 1px solid black;
             border-radius: 5px;
             position: absolute;
             top: 150px;
-            left: 100px;
+            left: 90px;
             opacity: 0;
             box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.15);
+            font-size: 14px;
         }
         
         .cardproT:hover .imgpro-Tall {
@@ -280,11 +325,17 @@
             .work .card {
                 width: 49.25%;
             }
+            .btnproT {
+                left: 55px;
+            }
         }
         
         @media (max-width: 480px) {
             .work .card {
                 width: 100%;
+            }
+            .btnproT {
+                left: 85px;
             }
         }
         
@@ -333,109 +384,4 @@
         .spanproT {
             margin-bottom: 1rem;
             display: block;
-        }
-        
-        .navbar-fixed-top.scrolled {
-            background-color: #ddd !important;
-            transition: background-color 200ms linear;
-            border-bottom: 2px solid #ad974f;
-        }
-        
-        .bgt1 {
-            background-image: url("img-TFT1/back05.jpg");
-            background-size: cover;
-            background-position: bottom;
-        }
-        
-        .ctnt2 {
-            background-color: transparent;
-            text-align: center;
-        }
-        
-        .txa {
-            text-decoration: none;
-            color: #ad974f;
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 15px;
-        }
-        
-        a:link {
-            text-decoration: none;
-        }
-        
-        .txa:visited {
-            color: #ad974f;
-        }
-        
-        .icon {
-            font-size: 25px;
-            text-align: center;
-        }
-        
-        .link-T {
-            text-align: center;
-        }
-        
-        .link-T a {
-            color: inherit;
-            text-decoration: none;
-            font-size: 10px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 600;
-            padding: 10px;
-        }
-        
-        .textft-T {
-            opacity: .9;
-            font-size: 11px;
-            text-align: center;
-            width: 100%;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        
-        .style-pFT {
-            margin-bottom: 5px;
-            font-size: 13px;
-        }
-        
-        .spft:link {
-            text-decoration: none;
-        }
-        
-        .spft:visited {
-            color: black;
-        }
-        
-        .spft:hover {
-            color: #ad974f;
-        }
-        
-        .color-t {
-            color: #ad974f;
-        }
-        
-        .scoial .iconftclone {
-            z-index: 1;
-            -webkit-transition: all .55s ease;
-            -moz-transition: all .55s ease;
-            -ms-transition: all .55s ease;
-            -o-transition: all .55s ease;
-            transition: all .55s ease;
-            text-align: center;
-        }
-        
-        .txa:hover .iconftclone {
-            -webkit-transform: scale(2.5);
-            /* Safari and Chrome */
-            -moz-transform: scale(1.5);
-            /* Firefox */
-            -ms-transform: scale(1.5);
-            /* IE 9 */
-            -o-transform: scale(1.5);
-            /* Opera */
-            transform: scale(1.5);
         }
