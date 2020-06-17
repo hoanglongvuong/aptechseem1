@@ -31,7 +31,23 @@
                     height: 70px;
                     border-bottom-left-radius: 0;
                     background-color: black;
-                    min-width: 150px;
+                    width: 150px;
+                }
+                
+                @media (max-width: 480px) {
+                    .group-T1 .input-group-append input {
+                        width: 80px;
+                        background-color: #ad974f;
+                    }
+                    .group-T1 .input-group-append input:hover {
+                        background-color: gray;
+                    }
+                    .group-T1 .input-group-append {
+                        width: 45px;
+                    }
+                    .scoial .txa {
+                        padding: 15px;
+                    }
                 }
                 
                 .btnt1:hover {
@@ -57,10 +73,10 @@
                 .txa {
                     text-decoration: none;
                     color: #ad974f;
-                    margin: 5px;
                     background-color: white;
-                    padding: 15px;
+                    padding: 20px;
                     border-radius: 5px;
+                    margin: 15px;
                 }
                 
                 .txa:hover {
@@ -117,4 +133,27 @@
                 
                 .spft:hover {
                     color: #ad974f;
+                }
+                
+                .scoial .iconftclone {
+                    z-index: 1;
+                    -webkit-transition: all .55s ease;
+                    -moz-transition: all .55s ease;
+                    -ms-transition: all .55s ease;
+                    -o-transition: all .55s ease;
+                    transition: all .55s ease;
+                    text-align: center;
+                }
+                
+                .txa:hover .iconftclone {
+                    -webkit-transform: scale(2.5);
+                    /* Safari and Chrome */
+                    -moz-transform: scale(1.5);
+                    /* Firefox */
+                    -ms-transform: scale(1.5);
+                    /* IE 9 */
+                    -o-transform: scale(1.5);
+                    /* Opera */
+                    transform: scale(1.5);
+                    color: #000;
                 }
