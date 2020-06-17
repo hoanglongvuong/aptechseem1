@@ -78,3 +78,62 @@ a:hover{
     width: 100%;
     padding: 20px;
 }
+@media (max-width: 992px){
+    .nav-logo img{
+        margin-top: 21px;
+        width: 100%;
+        display: inline;
+    }
+}
+@media (max-width: 992px){
+    .nav-logo{
+        width: 30%;
+        float: left;
+    }
+}
+@media (min-width:992px){
+    .nav-menu .navbar-collapse{
+        width: fit-content;
+        width: 40%;
+        float: left;
+    }
+}
+@media (max-width:992px){
+    .nav-menu .navbar-collapse a{
+        font-size: 20px;
+        display: inline;
+        padding-right: 15px;
+    }
+}
+@media (min-width: 768px){
+    .nav-logo img{
+        width: 100%;
+        display: inline;
+    }
+}
+@media (max-width: 768px){
+    .nav-logo{
+        width: 30%;
+        float: left;
+    }
+}
+@media (min-width:768px){
+    .nav-menu .navbar-collapse{
+        width: 30%;
+        float: left;
+    }
+    .nav-menu .navbar-collapse u{
+        margin-top: 6px;
+    }
+}
+@media (max-width:768px){
+    .nav-menu .navbar-collapse a{
+        font-size: 10px;
+        display: inline;
+        padding-right: 15px;
+    }
+}
+.gold-line{
+    background: #ad974f;
+    font-size: 20px;
+}
