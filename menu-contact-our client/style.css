@@ -2,6 +2,9 @@
 a:hover{
     text-decoration: none;
 }
+a:link{
+    text-decoration: none;
+}
 .nav-menu .navbar-collapse li{
     display: inline;
     list-style: none;
