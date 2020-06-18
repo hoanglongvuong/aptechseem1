@@ -7,10 +7,7 @@
 body {
   font-family: Montserrat, sans-serif;
 }
-.section {
-  padding: 100px 0;
-  width: 100%;
-}
+
 .white {
   background-color: #fff;
 }
@@ -56,7 +53,9 @@ body {
 .k-mt-50 {
   margin-top: 50px !important;
 }
-section {
+.section {
+  padding: 100px 0;
+  width: 100%;
   display: block;
 }
 .slider1{
@@ -255,4 +254,9 @@ section {
 }
 .k-black:hover{
   color: #000;
+}
+@media (min-width: 576px) {
+
+
+
 }
