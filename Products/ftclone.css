@@ -3,7 +3,7 @@
 }
 
 .bgt1 {
-    background-image: url("../img-TFT1/back05.jpg");
+    background-image: url("../Products/img-TFT1/back05.jpg");
     background-size: cover;
     background-position: bottom;
 }
@@ -17,18 +17,9 @@
     text-decoration: none;
     color: #ad974f;
     background-color: white;
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
     margin: 15px;
-}
-
-@media (max-width: 480px) {
-    .group-T1 .input-group-append {
-        width: 45px;
-    }
-    .scoial .txa {
-        padding: 15px;
-    }
 }
 
 a:link {
@@ -108,5 +99,4 @@ a:link {
     -o-transform: scale(1.5);
     /* Opera */
     transform: scale(1.5);
-    color: black;
 }

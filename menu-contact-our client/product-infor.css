@@ -86,6 +86,3 @@ div.stars {
     content: '\f006';
     font-family: FontAwesome;
   }
-  .slider-bar .carousel-indicators li{
-    background: #ad974f;
-  }
