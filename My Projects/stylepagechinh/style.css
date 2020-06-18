@@ -9,19 +9,14 @@
 body {
     font-family: Montserrat, sans-serif;
 }
-
-<<<<<<< HEAD
-=======
 .section {
     padding: 100px 0;
     width: 100%;
+    display: block;
 }
-
->>>>>>> 4a3a98d2641333ed5ac2ea7dcedbd80b96a4a695
-.white {
-    background-color: #fff;
+.white{
+    background: #fff;
 }
-
 .k-title {
     color: #000;
     font-size: 12px;
@@ -31,7 +26,6 @@ body {
     margin: 15px 0 0 0;
     display: block;
 }
-
 .line-gold {
     background-color: #ad974f;
     width: 50px;
@@ -66,23 +60,10 @@ body {
     line-height: 1.8em;
     width: 100%;
 }
-
 .k-mt-50 {
     margin-top: 50px !important;
 }
-<<<<<<< HEAD
-.section {
-  padding: 100px 0;
-  width: 100%;
-  display: block;
-=======
-
-section {
-    display: block;
->>>>>>> 4a3a98d2641333ed5ac2ea7dcedbd80b96a4a695
-}
-
-.slider1 {
+.slider1{
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
@@ -293,15 +274,3 @@ section {
 .k-black {
     color: #000 !important;
 }
-<<<<<<< HEAD
-@media (min-width: 576px) {
-
-
-
-}
-=======
-
-.k-black:hover {
-    color: #000;
-}
->>>>>>> 4a3a98d2641333ed5ac2ea7dcedbd80b96a4a695
