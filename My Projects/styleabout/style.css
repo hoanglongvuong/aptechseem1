@@ -128,7 +128,7 @@ body{
 .mt-50{
     margin-top: 50px;
 }
-.services-box{
+.row{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
