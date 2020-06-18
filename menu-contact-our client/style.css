@@ -66,12 +66,16 @@ a:link{
     width: 400px;
     height: auto;
     position: absolute;
-    top: 50px;
+    top: 62px;
     left: -335px;
     padding: 30px;
     box-sizing: border-box;
-    background: #dddddd94;
+    background: #ad974f;
     border-radius: 20px;
+}
+.navbar-collapse .log-in .sign-up-page a{
+    margin: 0;
+    padding: 0;
 }
 .navbar-collapse .log-in:hover .sign-up-page{
     display: block;
