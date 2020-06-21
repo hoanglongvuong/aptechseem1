@@ -330,12 +330,18 @@
             }
         }
         
+        @media (max-width: 800px) {
+            .btnproT {
+                left: 40px;
+            }
+        }
+        
         @media (max-width: 480px) {
             .work .card {
                 width: 100%;
             }
             .btnproT {
-                left: 85px;
+                left: 100px;
             }
         }
         

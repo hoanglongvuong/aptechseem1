@@ -1,0 +1,275 @@
+            .fontcustomer {
+                font-family: Montserrat, sans-serif;
+            }
+            
+            .form-input {
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.15);
+                border-radius: 10px;
+            }
+            
+            .mod-input input {
+                width: 100%;
+            }
+            
+            .inputcustomer {
+                padding: 10px;
+                outline: none;
+                border: 1px solid black;
+                border-radius: 5px;
+                width: 100%;
+                background-color: whitesmoke;
+            }
+            
+            .mod-address-tag {
+                border-radius: 6px;
+                color: #333;
+                padding: 20px 35px;
+                margin-right: 15px;
+                box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .12);
+                float: left;
+            }
+            
+            .address-tagwork {
+                border: 1px solid #ad974f;
+                background-color: #ad974f21;
+            }
+            
+            .address-taghome {
+                border: 1px solid #0094b6;
+                background-color: #01cefc1e;
+            }
+            
+            .btnaddress {
+                width: 100%;
+                margin-top: 50px;
+            }
+            
+            .animate {
+                transition: all 0.1s;
+                -webkit-transition: all 0.1s;
+            }
+            
+            .action-button {
+                padding: 10px 40px;
+                margin: 0px 10px 10px 0px;
+                border-radius: 3px;
+                font-size: 18px;
+                color: #FFF;
+                float: right;
+                border: none;
+            }
+            
+            .blue {
+                background-color: #3498db;
+                border-bottom: 5px solid #2980B9;
+            }
+            
+            .action-button:active {
+                transform: translate(0px, 15px);
+                -webkit-transform: translate(0px, 8px);
+                border-bottom: 1px solid;
+                outline: none;
+            }
+            
+            .summary-section {
+                margin-left: 15px;
+            }
+            
+            @media (max-width:1030px) {
+                .mod-phonet .mod-address .mod-address-tag {
+                    padding: 15px 8px;
+                    margin-right: 2px;
+                }
+                .summary-section .h5productT {
+                    font-size: 14px;
+                }
+                .paymentT .temporary-paymentT {
+                    font-size: 10px;
+                    font-weight: 800;
+                }
+                .paymentT .temporary-price {
+                    margin-left: 3px;
+                }
+                .deliveryT .delivery-charges {
+                    font-size: 12px;
+                    font-weight: 800;
+                }
+                .deliveryT .delivery-price {
+                    margin-left: 3px;
+                }
+                .discountproduct .discountcode {
+                    width: 90px;
+                }
+                .discountproduct .applycode {
+                    padding: 9px;
+                    border: 1px solid #3498db;
+                    font-size: 12px;
+                }
+                .totalizeproduct .totlize {
+                    font-weight: 800;
+                }
+                .totalizeproduct .pricetotalize {
+                    margin-left: 40px;
+                }
+                .btnaddress .paymentproduct {
+                    padding: 10px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .fontcustomer .col-8 {
+                    -webkit-flex: 0 0 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .fontcustomer .col-8 .container .row .col-6 {
+                    -webkit-flex: 0 0 100%;
+                    -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .mod-phonet {
+                    margin-top: 20px;
+                }
+                .mod-phonet .mod-address .mod-address-tag {
+                    padding: 15px;
+                }
+                .summary-section {
+                    -webkit-box-flex: 0;
+                    -webkit-flex: 0 0 100%;
+                    -ms-flex: 0 0 100%;
+                    /* flex: 0 0 25%; */
+                    max-width: 100%;
+                    margin-left: 0px;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+                .fontcustomer .row1 {
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+            }
+            
+            .wobble-horizontal {
+                color: black;
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                -webkit-transition: all 0.4s cubic-bezier(0.25, 0.1, 0.2, 1);
+                transition: all 0.4s cubic-bezier(0.25, 0.1, 0.2, 1);
+            }
+            
+            .wobble-horizontal:before {
+                display: block;
+                position: absolute;
+                content: "";
+            }
+            
+            .wobble-horizontal:before {
+                top: -100px;
+                left: 50px;
+                height: 150px;
+                z-index: -1;
+                -webkit-transition: all 0.4s cubic-bezier(0.25, 0.1, 0.2, 1);
+                transition: all 0.4s cubic-bezier(0.25, 0.1, 0.2, 1);
+                -webkit-transform: skew(70deg);
+                transform: skew(70deg);
+                width: calc(100% + 140px);
+                background: #ff3366;
+            }
+            
+            .wobble-horizontal:hover:before {
+                left: -10px;
+                top: -10px;
+            }
+            
+            .discountcode {
+                width: 190px;
+                padding: 5px;
+            }
+            
+            .temporary-price {
+                font-weight: 600;
+                margin-left: 50px;
+            }
+            
+            .temporary-paymentT {
+                font-size: 15px
+            }
+            
+            .h5productT {
+                font-weight: 600;
+                font-size: 20px;
+            }
+            
+            .delivery-charges {
+                font-size: 15px;
+            }
+            
+            .delivery-price {
+                font-weight: 600;
+                margin-left: 78px;
+            }
+            
+            .pricetotalize {
+                font-weight: 600;
+                margin-left: 140px;
+                color: orangered;
+            }
+            
+            .applycode {
+                background-color: #3498db;
+                color: white;
+                padding: 3px;
+                border: 5px solid #3498db;
+                border-radius: 5px;
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.15);
+                margin-left: 4px;
+            }
+            
+            .animated:hover {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+            }
+            
+            @-webkit-keyframes pulse {
+                from {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+                50% {
+                    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                    transform: scale3d(1.05, 1.05, 1.05);
+                }
+                to {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+            }
+            
+            @keyframes pulse {
+                from {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+                50% {
+                    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                    transform: scale3d(1.05, 1.05, 1.05);
+                }
+                to {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+            }
+            
+            .pulse:hover {
+                -webkit-animation-name: pulse;
+                animation-name: pulse;
+            }
+            
+            .paymentproduct {
+                width: 90%;
+            }
