@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, sans-serif !important;
 }
 .section {
     padding: 100px 0;
@@ -15,10 +15,9 @@ body {
     display: block;
 }
 .white{
-    background: #fff;
+    background: #fff !important;
 }
-.k-title {
-    color: #000;
+.k-explore h5{
     font-size: 12px;
     letter-spacing: 4px;
     font-weight: 500;
@@ -34,8 +33,7 @@ body {
     margin: 0 auto;
 }
 
-.k-title-2 {
-    color: #000;
+.k-explore h2{
     font-size: 40px;
     width: 100%;
     margin: 20px 0 10px 0;
@@ -45,14 +43,14 @@ body {
 }
 
 .k-gold {
-    color: #ad974f;
+    color: #ad974f !important;
 }
 
 .k-snow {
-    color: #f4f1eb;
+    color: #f4f1eb !important;
 }
 
-.k-title-3 {
+.k-explore h6{
     font-size: 18px;
     color: #3f382e;
     font-weight: 200;
@@ -60,7 +58,7 @@ body {
     line-height: 1.8em;
     width: 100%;
 }
-.k-mt-50 {
+.mt-50 {
     margin-top: 50px !important;
 }
 .slider1{
@@ -72,17 +70,16 @@ body {
 .promo-item {
     position: relative;
     text-align: center;
-    display: inline-block !important;
-    height: 100%;
     width: 100%;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
-
 .slick-slide {
     margin: 0 5px;
 }
-
 .link-item {
     position: absolute;
     width: 100%;
@@ -91,6 +88,9 @@ body {
     z-index: 9;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 
 .hover-link {
@@ -105,12 +105,18 @@ body {
     cursor: pointer;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 
 .hover-link:hover {
     opacity: 1;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 
 .promo-btn {
@@ -125,6 +131,9 @@ body {
     display: inline-block;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
     text-transform: uppercase;
 }
 
@@ -133,6 +142,9 @@ body {
     opacity: 8;
     transition: all 0.3 ease-out;
     -webkit-transition: all 0.3 ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 
 .large {
@@ -142,7 +154,7 @@ body {
 }
 
 .black {
-    background-color: #000;
+    background-color: #000 !important;
 }
 
 .animated:hover {
@@ -202,11 +214,11 @@ body {
 }
 
 .gold {
-    background-color: #ad974f;
+    background-color: #ad974f !important;
 }
 
 .k-white {
-    color: #fff;
+    color: #fff !important;
 }
 
 .promo-title {
@@ -253,12 +265,6 @@ body {
     height: 100%;
     left: 0;
 }
-
-.img-product {
-    width: 100%;
-    height: 409px;
-}
-
 .border-2 {
     border: 2px solid #010101;
 }
@@ -274,3 +280,182 @@ body {
 .k-black {
     color: #000 !important;
 }
+/*About*/
+.video{
+    position: relative;
+}
+.k-about h5{
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    width: 100%;
+    margin: 15px 0 0 0;
+    display: block;
+    text-transform: uppercase;
+}
+.k-about h2{
+    font-size: 40px;
+    width: 100%;
+    margin: 20px 0 10px 0;
+    line-height: 1.2em;
+    font-weight: 500;
+    display: inline-block;
+}
+.k-about h6{
+    font-size: 18px;
+    font-weight: 200;
+    margin: 10px 0;
+    line-height: 1.8em;
+    width: 100%; 
+}
+.paragraph{
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.mt-30{
+    margin-top: 30px !important;
+}
+.video-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.color-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #010101;
+    width: 100%;
+    height: 100%;
+}
+.op-7{  
+    opacity: .7 !important;
+}
+.video-back video{
+    width: 100%;
+}
+.testimonials-title h5{
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    width: 100%;
+    margin: 15px 0 0 0;
+    text-transform: uppercase;
+    display: block;
+}
+.testimonials-title h2{
+    font-size: 40px;
+    width: 100%;
+    margin: 20px 0 10px 0;
+    line-height: 1.2em;
+    font-weight: 500;
+    display: inline-block;
+}
+.testimonials-container{
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+}
+.slide{
+    background-size: cover;
+    background-position: bottom;
+}
+.carousel-indicators{
+    bottom: -50px !important;
+}
+.carousel-indicators li{
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background: #999;
+    border: 0;
+    margin: 10px 8px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3 ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+.carousel-indicators .active{
+    width: 12px;
+    height: 6px;
+    border-radius: 12px;
+    display: block;
+}
+.carousel-item .active{
+    display: block;
+}
+.item{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 30px;
+    border-radius: 6px;
+}
+.img{
+    width: 100%;
+}
+.img img{
+    width: 130px;
+    border-radius: 50%;
+    border-color: #f2f2f2;
+    border-width: 3px;
+    border-style: solid;
+}
+.item h6{
+    font-size: 18px;
+    font-weight: 200;
+    margin: 10px 0;
+    line-height: 1.8em;
+    width: 100%;
+}
+.name{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.role{
+    font-size: 12px;
+    opacity: .7;
+    font-weight: 300;
+}
+.k-black-clay{
+    color: #342e28;
+}
+@media only screen and (max-width: 991px) {
+    .k-explore h2{
+        font-size: 36px;
+        margin: 20px 0;
+    }
+    .k-about h2{
+        font-size: 36px;
+        margin: 20px 0;
+    }
+    .testimonials-title h2{
+        font-size: 36px;
+        margin: 20px 0;
+    }
+    .promo-title h3{
+        font-size: 20px;
+    }
+    .section{
+        padding: 40px 0;
+    }
+    .carousel-indicators {
+        bottom: 20px;
+        width: 100px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+    .testimonial-container .item{
+        width: 100%;
+    }
+}
+
