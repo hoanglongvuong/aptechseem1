@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="stylelogin/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <i class="fas fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto;"></i>
+    <div class="modal" id="id01">
+        <form class="modal-content animate">
+            <div class="img-container">
+                <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                <img src="Image cho project/5a991c82be987_thumb900.png" class="avatar">
+            </div>
+            <div class="container pd-16">
+                <label><b>Username</b></label>
+                <input class="input-name" type="text" placeholder="Enter Username" required>
+                <label><b>Password</b></label>
+                <input class="input-psw" type="password" placeholder="Enter Password" required>
+                <button type="submit" class="btn-login">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked"> Remember me
+                </label>
+            </div>
+            <div class="container pd-16" style="background-color: #f1f1f1;">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                <span class="psw">Forgot <a href="#">password ?</a></span>
+            </div>
+        </form>
+    </div>
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
