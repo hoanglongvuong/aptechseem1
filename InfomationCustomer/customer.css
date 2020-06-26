@@ -73,6 +73,7 @@
             
             .summary-section {
                 margin-left: 15px;
+                height: 450px;
             }
             
             @media (max-width:1030px) {
