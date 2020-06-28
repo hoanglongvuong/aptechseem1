@@ -66,12 +66,8 @@ img.avatar{
     margin-top: 16px;
     vertical-align: middle;
 }
-.k-container{
-    padding: 0.01em 16px !important;
-}
 .pd-16{
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
+    padding: 0.01em 16px !important;
 }
 .input-name, .input-psw{
     width: 100%;

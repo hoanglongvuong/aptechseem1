@@ -3,7 +3,7 @@
 }
 
 .bgt1 {
-    background-image: url("../img-TFT1/back05.jpg");
+    background-image: url("../img-TFT1/ftimg.jpg");
     background-size: cover;
     background-position: bottom;
 }
@@ -16,32 +16,26 @@
 .txa {
     text-decoration: none;
     color: #ad974f;
+    margin: 5px;
     background-color: white;
     padding: 15px;
     border-radius: 5px;
-    margin: 15px;
 }
 
-@media (max-width: 480px) {
-    .group-T1 .input-group-append {
-        width: 45px;
-    }
-    .scoial .txa {
-        padding: 15px;
-    }
-}
-
-a:link {
+.txa:hover {
+    color: #ad974f;
+    border-bottom: 0px solid transparent;
     text-decoration: none;
 }
 
-.txa:visited {
-    color: #ad974f;
+.icon {
+    font-size: 22px;
+    text-align: center;
+    margin-left: 1px;
 }
 
-.icon {
-    font-size: 25px;
-    text-align: center;
+.iconfb {
+    margin-left: 2px;
 }
 
 .link-T {
@@ -65,48 +59,4 @@ a:link {
     width: 100%;
     display: inline-block;
     margin-top: 20px;
-}
-
-.style-pFT {
-    margin-bottom: 5px;
-    font-size: 13px;
-}
-
-.spft:link {
-    text-decoration: none;
-}
-
-.spft:visited {
-    color: black;
-}
-
-.spft:hover {
-    color: #ad974f;
-}
-
-.color-t {
-    color: #ad974f;
-}
-
-.scoial .iconftclone {
-    z-index: 1;
-    -webkit-transition: all .55s ease;
-    -moz-transition: all .55s ease;
-    -ms-transition: all .55s ease;
-    -o-transition: all .55s ease;
-    transition: all .55s ease;
-    text-align: center;
-}
-
-.txa:hover .iconftclone {
-    -webkit-transform: scale(2.5);
-    /* Safari and Chrome */
-    -moz-transform: scale(1.5);
-    /* Firefox */
-    -ms-transform: scale(1.5);
-    /* IE 9 */
-    -o-transform: scale(1.5);
-    /* Opera */
-    transform: scale(1.5);
-    color: black;
 }
