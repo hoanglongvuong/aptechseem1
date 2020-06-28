@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .mt-100{
     margin-top: 100px;
