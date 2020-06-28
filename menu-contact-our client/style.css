@@ -8,6 +8,7 @@ a:link{
 .nav-menu .navbar-collapse li{
     display: inline;
     list-style: none;
+    text-transform: uppercase;
 
 }
 .nav-menu .navbar-collapse a{
@@ -16,11 +17,11 @@ a:link{
     padding-right: 25px;
 }
 .navbar-fixed-top.scrolled{
-    background-color: #fff !important;
+    background-color: white !important;
     transition: background-color 200ms linear;
 }
 .navbar-fixed-top.scrolled .navbar-light{
-    color:rgb(226, 149, 149);
+    color:rgb(0, 0, 0);
   }
 .nav-menu{
     z-index: 999;

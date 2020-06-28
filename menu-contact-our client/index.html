@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="stylelogin/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -36,45 +41,42 @@
                 </div>
                 <div class="navbar-collapse col-lg-8" style="width: unset;">
                     <ul style="margin-top: 25px;">
-                        <li><a href="#">Calendars</a></li>
+                        <li><a href="#">Explore</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Product</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        <li class="log-in"><a href="#"><i class="fa fa-user"></i></a>
-                            <ul class="sign-up-page">
-                                <li>
-                                    <script type="text/javascript">
-                                        //đăng nhập form
-                                        function getName(){
-                                            var username = document.getElementById("username").value;
-                                            var password = document.getElementById("password").value;
-                                            if( username == "admin" && password == "123"){
-                                                alert("ok");
-                                                window.location = "https://www.google.com/webhp?hl=vi&sa=X&ved=0ahUKEwjV9f3z67DpAhUkGKYKHZz6DxkQPAgH";
-                                            }
-                                            else{
-                                                alert("try it again !");
-                                            }
-                                        }
-                                    </script>
-                                    <div class="sign-up">
-                                        <h3 style="text-align: center; color: black;">Welcome</h3>
-                                        <form>
-                                            <input id="username" type="text" style="width: 100%; border-radius: 20px; border: 1px solid black;" placeholder=" User name">
-                                            <input id="password" type="password" style="width: 100%; border-radius: 20px; margin-top: 10px; border: 1px solid black;" placeholder=" Password">
-                                            <input type="button" value="Login" onclick="getName();" style="border-radius: 20px; width: 80%; margin-top: 10px; margin-left: 35px; border: 1px solid black;">
-                                            <input type="button" value="Sign-up" onclick="getName();" style="border-radius: 20px; width: 80%; margin-top: 10px; margin-left: 35px; border: 1px solid black;">
-                                            <hr style="background: black;">
-                                            <div class="login-with" style="color: black; font-size: 30px; text-align: center;">
-                                                <h5>Or</h5>
-                                                <a><i class="fa fa-facebook"></i></a>
-                                                <a><i class="fa fa-google"></i></a>
-                                            </div>
-                                        </form>
+                        <li><i class="fa fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto; font-size: 22px; color: black;"></i>
+                            <div class="modal" id="id01">
+                                <form class="modal-content animate">
+                                    <div class="img-container">
+                                        <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                                        <img src="Image cho project/5a991c82be987_thumb900.png" class="avatar">
                                     </div>
-                                </li>
-                            </ul>
+                                    <div class="container pd-16">
+                                        <label><b>Username</b></label>
+                                        <input class="input-name" type="text" placeholder="Enter Username" required>
+                                        <label><b>Password</b></label>
+                                        <input class="input-psw" type="password" placeholder="Enter Password" required>
+                                        <button type="submit" class="btn-login">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked"> Remember me
+                                        </label>
+                                    </div>
+                                    <div class="container pd-16" style="background-color: #f1f1f1;">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password ?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                var modal = document.getElementById('id01');
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
                         </li>
                     </ul>
                 </div>
