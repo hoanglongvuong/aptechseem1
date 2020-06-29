@@ -6,6 +6,7 @@
     background-image: url("../img-TFT1/back05.jpg");
     background-size: cover;
     background-position: bottom;
+    position: unset;
 }
 
 .ctnt2 {
