@@ -93,17 +93,16 @@ div.stars {
   @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
 .col-item
 {
-    border: 1px solid #E1E1E1;
+    height: 480px;
+    border: 1px solid #ad974f;
     border-radius: 5px;
-    background: #FFF;
-    height: 340px;
 }
-.col-item .photo img
-{
-    margin: 0 auto;
+.col-item .photo img {
+    height: 100%;
     width: 100%;
+    object-fit: unset;
+    padding: 5px;
 }
-
 .col-item .info
 {
     padding: 10px;
@@ -114,13 +113,6 @@ div.stars {
 .col-item:hover .info {
     background-color: #F5F5DC;
 }
-.col-item .price
-{
-    /*width: 50%;*/
-    float: left;
-    margin-top: 5px;
-}
-
 .col-item .price h5
 {
     line-height: 20px;
@@ -129,25 +121,13 @@ div.stars {
 
 .price-text-color
 {
-    color: #219FD1;
+    color: #ad974f;
 }
 
 .col-item .info .rating
 {
-    color: #777;
+    color: black;
 }
-
-.col-item .rating
-{
-    /*width: 50%;*/
-    float: left;
-    font-size: 17px;
-    text-align: right;
-    line-height: 52px;
-    margin-bottom: 10px;
-    height: 52px;
-}
-
 .col-item .separator
 {
     border-top: 1px solid #E1E1E1;
@@ -186,4 +166,8 @@ div.stars {
     width: 50%;
     float: left;
     padding-left: 10px;
+}
+.hidden-sm{
+    color: #ad974f;
+    font-weight: 400;
 }
