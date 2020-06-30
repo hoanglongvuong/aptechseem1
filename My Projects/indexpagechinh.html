@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page chính</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="stylelogin/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="product-infor.css">
   <link href="stylepagechinh/style.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="js/bootstrap.min.js"></script>
@@ -24,13 +27,70 @@
 </head>
 
 <body>
-  
+  <script>
+    $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+    </script>
+    <header class="nav-menu navbar-fixed-top">
+        <div class="container">
+            <div class="row navbar-light" style="display: inline-block;">
+                <div class="nav-logo col-lg-4">
+                    <a href="#"><img src="image/your-logo-ig.png" style="width: 80%;"></a>
+                </div>
+                <div class="navbar-collapse col-lg-8" style="width: unset;">
+                    <ul style="margin-top: 25px;">
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                        <li><i class="fa fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto; font-size: 17px; color: black;"></i>
+                            <div class="modal" id="id01">
+                                <form class="modal-content animate">
+                                    <div class="img-container">
+                                        <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                                        <img src="Image cho project/5a991c82be987_thumb900.png" class="avatar">
+                                    </div>
+                                    <div class="container pd-16">
+                                        <label><b>Username</b></label>
+                                        <input class="input-name" type="text" placeholder="Enter Username" required>
+                                        <label><b>Password</b></label>
+                                        <input class="input-psw" type="password" placeholder="Enter Password" required>
+                                        <button type="submit" class="btn-login">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked"> Remember me
+                                        </label>
+                                    </div>
+                                    <div class="container pd-16" style="background-color: #f1f1f1;">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password ?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                var modal = document.getElementById('id01');
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
   <div class="white">
     <div class="content text-center">
       <div class="slider-container">
         <div id="slide-item" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
-            <ol class="carousel-indicators">
+            <ol class="carousel-indicators" style="left: 5%;">
               <li data-target="#slide-item" data-slide-to="0" class="white move-promotion active"></li>
               <li data-target="#slide-item" data-slide-to="1" class="white move-promotion"></li>
               <li data-target="#slide-item" data-slide-to="2" class="white move-promotion"></li>
@@ -38,7 +98,7 @@
             <div class="carousel-item active slide one">
               <div class="img-container">
                 <div class="content-box">
-                  <div class="content-data">
+                  <div class="content-data" style="padding: none; left: 5;">
                     <h5 class="k-white">
                       RYANA CALENDARS
                     </h5>
@@ -54,7 +114,7 @@
             <div class="carousel-item two slide">
               <div class="img-container ">
                 <div class="content-box">
-                  <div class="content-data">
+                  <div class="content-data" style="padding: none; left: 5;">
                     <h5 class="k-white">
                       RYANA CALENDARS
                     </h5>
@@ -70,7 +130,7 @@
             <div class="carousel-item slide three">
               <div class="img-container">
                 <div class="content-box">
-                  <div class="content-data">
+                  <div class="content-data" style="padding: none; left: 5;">
                     <h5 class="k-white">
                       RYANA CALENDARS
                     </h5>
