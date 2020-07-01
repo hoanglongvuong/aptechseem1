@@ -1,89 +1,80 @@
-$('.slider').each(function() {
-    var $this = $(this);
-    var $group = $this.find('.slide_group');
-    var $slides = $this.find('.slide');
-    var bulletArray = [];
-    var currentIndex = 0;
-    var timeout;
-    
-    function move(newIndex) {
-      var animateLeft, slideLeft;
-      
-      advance();
-      
-      if ($group.is(':animated') || currentIndex === newIndex) {
-        return;
-      }
-      
-      bulletArray[currentIndex].removeClass('active');
-      bulletArray[newIndex].addClass('active');
-      
-      if (newIndex > currentIndex) {
-        slideLeft = '100%';
-        animateLeft = '-100%';
-      } else {
-        slideLeft = '-100%';
-        animateLeft = '100%';
-      }
-      
-      $slides.eq(newIndex).css({
-        display: 'block',
-        left: slideLeft
-      });
-      $group.animate({
-        left: animateLeft
-      }, function() {
-        $slides.eq(currentIndex).css({
-          display: 'none'
-        });
-        $slides.eq(newIndex).css({
-          left: 0
-        });
-        $group.css({
-          left: 0
-        });
-        currentIndex = newIndex;
-      });
-    }
-    
-    function advance() {
-      clearTimeout(timeout);
-      timeout = setTimeout(function() {
-        if (currentIndex < ($slides.length - 1)) {
-          move(currentIndex + 1);
-        } else {
-          move(0);
-        }
-      }, 4000);
-    }
-    
-    $('.next_btn').on('click', function() {
-      if (currentIndex < ($slides.length - 1)) {
-        move(currentIndex + 1);
-      } else {
-        move(0);
-      }
-    });
-    
-    $('.previous_btn').on('click', function() {
-      if (currentIndex !== 0) {
-        move(currentIndex - 1);
-      } else {
-        move(3);
-      }
-    });
-    
-    $.each($slides, function(index) {
-      var $button = $('<a class="slide_btn">&bull;</a>');
-      
-      if (index === currentIndex) {
-        $button.addClass('active');
-      }
-      $button.on('click', function() {
-        move(index);
-      }).appendTo('.slide_buttons');
-      bulletArray.push($button);
-    });
-    
-    advance();
-  });
+var cartCount = 0,
+	 buy = $('.btn'),
+	 span = $('.number'),
+	 cart = $('.cart'),
+	 quickview = $('.quickviewContainer'),
+	 quickViewBtn = $('.quickview'),
+	 close = $('.quickviewContainer .close'),
+	 minicart = [],
+	 totalPrice = [],
+	 miniCartPrice;
+
+buy.on('click', addToCart);
+quickViewBtn.on('click', quickView);
+cart.on('click', showMiniCart);
+close.on('click', function(){
+	quickview.removeClass('active');
+});
+
+function quickView() {
+	var description = $(this).parent().find('.description').text(),
+		 header = $(this).parent().find('.header').text(),
+		 price = $(this).find('.price'),
+		 quickViewHeader = $('.quickviewContainer .headline'),
+		 quickViewDescription = $('.quickviewContainer .description');
+	clearTimeout(timeQuick);
+		if(quickview.hasClass('active')){
+			quickview.removeClass('active');
+			var timeQuick = setTimeout(function(){
+				quickview.addClass('active');
+			}, 300);
+		} else{
+			quickview.addClass('active');
+		}
+	
+	quickViewHeader.text(header);
+	quickViewDescription.text(description);
+}
+
+function showMiniCart() {
+	$('.mini').toggleClass('visible');
+}
+
+function addToCart() {
+	var self = $(this),
+		 productName = $(this).parent().find('.header').text(),
+		 miniCartNames = $('.products'),
+		 names = $('.names'),
+		 price = $(this).parent().find('.price').text(),
+		 priceInt = parseInt(price);
+	
+	totalPrice.push(priceInt);
+	miniCartPrice = totalPrice.reduce(function(a,b){  return a+b });
+	$('.miniprice').text('Total amount: ' + miniCartPrice + ",-");
+	minicart.push(productName);
+	lastProduct = minicart[minicart.length - 1];
+	miniCartNames.text('Your cart lines: ');
+	names.append('<p>' + lastProduct + '</p>');
+	
+	cartCount++;
+	span.text(cartCount);
+	clearTimeout(time);
+	if(span.hasClass('update')){
+		span.removeClass('update');
+		span.addClass('updateQuantity');
+		var time = setTimeout(function(){
+			span.removeClass('updateQuantity');
+			span.addClass('update');
+		}, 700);
+	} else{
+		span.addClass('update');
+	}
+	if (cartCount == 1){
+		cart.toggleClass('icon-basket icon-basket-loaded');
+	}
+	
+	$(this).addClass('ok');
+	var timeOk = setTimeout(function(){
+		self.removeClass('ok');
+	}, 1000);
+}

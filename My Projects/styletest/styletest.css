@@ -1,119 +1,42 @@
-html, body {
-  background: #F7F5E6;
-  height: 100%;
+*{
+  box-sizing: border-box;
+}
+nav .mini{
+  position: relative;
+  top: 80px;
+  right: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease .2s;
+}
+nav .mini.visible{
+  opacity: 1;
+  visibility: visible;
+}
+nav .mini .products{
+  font-weight: bold;
+  font-size: 14px;
+}
+nav .mini p{
+  display: block;
   margin: 0;
   padding: 0;
-  width: 100%;
+  line-height: 20px;
 }
-
-.slider {
-  margin: 0 auto;
-  max-width: 450px;
-}
-
-.slide_viewer {
-  height: 500px;
-  overflow: hidden;
+nav .cart{
   position: relative;
-}
-
-.slide_group {
+  float: right;
+  margin-right: 50px;
+  line-height: 70px;
+  font-size: 28px;
   height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.slide {
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.slide:first-child {
-  display: block;
-}
-
-.slide:nth-of-type(1) {
-  background-image: url(kha.jpg);
-}
-
-.slide:nth-of-type(2) {
-  background-image: url(kha-2.jpg);
-}
-
-.slide:nth-of-type(3) {
-  background-image: url(kha-3.jpg);
-}
-
-.slide_buttons {
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-}
-
-a.slide_btn {
-  color: #474544;
-  font-size: 42px;
-  margin: 0 0.175em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.slide_btn.active, .slide_btn:hover {
-  color: #428CC6;
   cursor: pointer;
 }
-
-.directional_nav {
-  height: 200px;
-  margin: 0 auto;
-  max-width: 940px;
-  position: relative;
-  top: -400px;
-}
-
-.previous_btn {
-  bottom: 0;
-  left: 100px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-}
-
-.next_btn {
-  bottom: 0;
-  margin: auto;
-  position: absolute;
-  right: 100px;
-  top: 0;
-}
-
-.previous_btn, .next_btn {
-  cursor: pointer;
-  height: 65px;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-  width: 65px;
-}
-
-.previous_btn:hover, .next_btn:hover {
+nav .cart span{
+  height: 100%;
+  float: left;  
+  margin-right: 20px;
   opacity: 1;
-}
-
-@media only screen and (max-width: 767px) {
-  .previous_btn {
-    left: 50px;
-  }
-  .next_btn {
-    right: 50px;
-  }
+  color: #333;
+  font-size: 18px;
 }
