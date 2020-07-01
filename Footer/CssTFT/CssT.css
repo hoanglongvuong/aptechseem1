@@ -9,6 +9,10 @@
                     height: 790px;
                 }
                 
+                a:link {
+                    text-decoration: none;
+                }
+                
                 .ctnt1 {
                     box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.1);
                     background-color: white;
@@ -143,6 +147,7 @@
                     -o-transition: all .55s ease;
                     transition: all .55s ease;
                     text-align: center;
+                    color: #ad974f;
                 }
                 
                 .txa:hover .iconftclone {
