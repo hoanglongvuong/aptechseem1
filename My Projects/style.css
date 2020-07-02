@@ -54,3 +54,44 @@ a:hover{
     vertical-align: middle;
     width: 75%;
 }
+@media only screen and (max-width: 375px) {
+    .nav-logo{
+        text-align: center;
+    }
+    .navbar-collapse{
+        width: unset;
+        margin-left: -15px;
+        margin-right: -18px;
+        display: flex;
+    }
+    .navbar-collapse ul{
+    margin-top: 25px;
+    margin-left: -20px;
+    }
+    .nav-menu .navbar-collapse a {
+        background: #ad974f;
+        color: #000;
+        margin: 0px;
+        font-size: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 20px;
+    }
+    .contact-site h4{
+        text-align: center;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+      .navbar-collapse{
+          margin-left: -25px;
+      }
+      .navbar-collapse ul{
+        text-align: center;
+      }
+      .nav-logo{
+          text-align: center;
+      }
+      .navbar-collapse a{
+          padding-left: 10px;
+      }
+  }
