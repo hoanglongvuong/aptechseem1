@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,232 +17,201 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <title>Calendar 1</title>
 </head>
+
 <body>
-    <script>
-        $(function () {
-        $(document).scroll(function () {
-          var $nav = $(".navbar-fixed-top");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
-    <header class="nav-menu navbar-fixed-top" style="background: white;">
-        <div class="container">
-            <div class="row navbar-light">
-                <div class="nav-logo col-lg-4">
-                    <img src="image/your-logo-ig.png" width="250px;">
-                </div>
-                <div class="navbar-collapse col-lg-8">
-                    <ul style="margin-top: 30px;">
-                        <li><a href="#">Calender</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+
     <div class="container" style="padding-top: 150px; padding-bottom: 80px;">
-      <div class="slider-bar">
-        <div id="myCarousel" class="carousel slide border" data-ride="carousel">
-<!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel"data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel"data-slide-to="1" ></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="../Image cho project/Calendar 1.jfif" style="height: 500px; object-fit: contain;">
+        <div class="slider-bar">
+            <div id="myCarousel" class="carousel slide border" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="shadowproducts">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="../Image cho project/Calendar 1.jfif">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../Image cho project/Calendar 1b.jfif">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../Image cho project/Calendar 1c.jfif">
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="../Image cho project/Calendar 1b.jfif" style="height: 500px; object-fit: contain;">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="../Image cho project/Calendar 1c.jfif" style="height: 500px; object-fit: contain;">
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="product-infor">
-      <div class="container">
-        <div class="content center">
-          <div class="col-lg-6">
-            <blockquote>
-              <i class="fa fa-quote-right" style="font-size: 50px;position: absolute;"></i>
-              <span class="quote" style="display: inline-block; padding-left: 80px; font-size: 24px;
-              font-style: italic;">
-                "I have purchased this calendar for the past 15 years or more and am very happy with the quality."
+    <div class=" product-infor ">
+        <div class="container ">
+            <div class="content center ">
+                <div class="col-lg-6 ">
+                    <blockquote>
+                        <i class="fa fa-quote-right " style="font-size: 50px;position: absolute; "></i>
+                        <span class="quote " style="display: inline-block; padding-left: 80px; font-size: 24px; font-style: italic; ">
+                "I have purchased this calendar for the past 15 years or more and am very happy with the quality. "
               </span>
-              <span class="author" style="display: block; padding-left: 80px;">-rpettibone</span>
-            </blockquote>
-          </div>
-          <div class="col-lg-6 left">
-            <h5 class="title">Calendar</h5>
-            <span class="gold line"></span>
-            <h1>Lab Retriever Deluxe Wall Calendar</h1>
-            <div class="stars">
-              <form action="">
-                <input class="star star-5" id="star-5" type="radio" name="star"/>
-                <label class="star star-5" for="star-5"></label>
-                <input class="star star-4" id="star-4" type="radio" name="star"/>
-                <label class="star star-4" for="star-4"></label>
-                <input class="star star-3" id="star-3" type="radio" name="star"/>
-                <label class="star star-3" for="star-3"></label>
-                <input class="star star-2" id="star-2" type="radio" name="star"/>
-                <label class="star star-2" for="star-2"></label>
-                <input class="star star-1" id="star-1" type="radio" name="star"/>
-                <label class="star star-1" for="star-1"></label>
-              </form>
+                        <span class="author " style="display: block; padding-left: 80px; ">-rpettibone</span>
+                    </blockquote>
+                </div>
+                <div class="col-lg-6 left ">
+                    <h5 class="title ">Calendar</h5>
+                    <span class="gold line "></span>
+                    <h1>Lab Retriever Deluxe Wall Calendar</h1>
+                    <div class="stars ">
+                        <form action=" ">
+                            <input class="star star-5 " id="star-5 " type="radio " name="star " />
+                            <label class="star star-5 " for="star-5 "></label>
+                            <input class="star star-4 " id="star-4 " type="radio " name="star " />
+                            <label class="star star-4 " for="star-4 "></label>
+                            <input class="star star-3 " id="star-3 " type="radio " name="star " />
+                            <label class="star star-3 " for="star-3 "></label>
+                            <input class="star star-2 " id="star-2 " type="radio " name="star " />
+                            <label class="star star-2 " for="star-2 "></label>
+                            <input class="star star-1 " id="star-1 " type="radio " name="star " />
+                            <label class="star star-1 " for="star-1 "></label>
+                        </form>
+                    </div>
+                    <h5 class="title ">price :
+                        <span class="gold " style="font-size: 30px; "> $16.99</span>
+                    </h5>
+                    <p style="margin-top: 30px; ">
+                        Popular calendar title! Printed on high-quality, FSC Certified paper. Features full-color photography throughout. Includes all major and significant holidays. Carefully curated images each month. Give as a gift for any occasion. Stay organized and on
+                        track all year. Perfect for the home or office. Available in multiple formats.
+                    </p>
+                    <p style="margin-top: 40px; ">
+                        <a href="# " class="buy ">BUY</a>
+                    </p>
+                </div>
             </div>
-            <h5 class="title">price :
-              <span class="gold" style="font-size: 30px;"> $16.99</span>
-            </h5>
-            <p style="margin-top: 30px;">
-                Popular calendar title!
-                Printed on high-quality, FSC Certified paper.
-                Features full-color photography throughout.
-                Includes all major and significant holidays.
-                Carefully curated images each month.
-                Give as a gift for any occasion.
-                Stay organized and on track all year.
-                Perfect for the home or office.
-                Available in multiple formats.
-            </p>
-            <p style="margin-top: 40px;">
-              <a href="#" class="buy">BUY</a>
-            </p>
-          </div>
         </div>
-      </div>
     </div>
     <!-- more-product -->
-    <hr style="background: #ad974f!important; width: 75%;">
-    <div class="product-more" style="margin-top: 30px;">
-      <div class="container">
-        <div class="row">
-            <div class="title-infor" style="margin-bottom: 30px;">
-                    <h3 style="font-weight: bold;">MORE <span style="color: #ad974f; letter-spacing: 4px;">PRODUCT</span></h3>
-            </div>
-            <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%202b.jfif" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row" style="margin-left: 0px;     padding-top: 50px;">
-                                            <div class="price">
-                                                <h5>Obama Wall Calendar</h5>
-                                                <h5 class="price-text-color">$10.5 (-30% OFF)</h5>
+    <hr style="background: #ad974f!important; width: 75%; ">
+    <div class="product-more " style="margin-top: 30px; ">
+        <div class="container ">
+            <div class="row ">
+                <div class="title-infor " style="margin-bottom: 30px; ">
+                    <h3 style="font-weight: bold; ">MORE <span style="color: #ad974f; letter-spacing: 4px; ">PRODUCT</span></h3>
+                </div>
+                <div id="carousel-example " class="carousel slide hidden-xs " data-ride="carousel ">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner ">
+                        <div class="item active ">
+                            <div class="row ">
+                                <div class="col-sm-3 ">
+                                    <div class="col-item ">
+                                        <div class="photo ">
+                                            <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%202b.jfif " class="img-responsive " alt="a " />
+                                        </div>
+                                        <div class="info ">
+                                            <div class="row " style="margin-left: 0px; padding-top: 50px; ">
+                                                <div class="price ">
+                                                    <h5>Obama Wall Calendar</h5>
+                                                    <h5 class="price-text-color ">$10.5 (-30% OFF)</h5>
+                                                </div>
+                                                <div class="rating hidden-sm ">
+                                                    <i class="price-text-color fa fa-star "></i><i class="price-text-color fa fa-star ">
+                                                </i><i class="price-text-color fa fa-star "></i><i class="price-text-color fa fa-star ">
+                                                </i><i class="fa fa-star "></i>
+                                                </div>
                                             </div>
-                                            <div class="rating hidden-sm">
-                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="fa fa-star"></i>
+                                            <div class="separator clear-left " style="margin-top: 30px; ">
+                                                <p class="btn-add ">
+                                                    <i class="fa fa-shopping-cart "></i><a href="# " class="hidden-sm ">Add to cart</a></p>
+                                                <p class="btn-details ">
+                                                    <i class="fa fa-list "></i><a href="# " class="hidden-sm ">More details</a></p>
                                             </div>
-                                        </div>
-                                        <div class="separator clear-left" style="margin-top: 30px;">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
-                                        </div>
-                                        <div class="clearfix">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%203.jfif" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row" style="margin-left: 0px;  margin-top: -8px;">
-                                            <div class="price">
-                                                <h5>Americas National Parks Desk Calendar
-                                                </h5>
-                                                <h5 class="price-text-color">
-                                                    $88.99</h5>
+                                            <div class="clearfix ">
                                             </div>
-                                            <div class="rating hidden-sm">
-                                            </div>
-                                        </div>
-                                        <div class="separator clear-left" style="margin-top: 30px;">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
-                                        </div>
-                                        <div class="clearfix">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%204c.jfif" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row" style="margin-left: 0px;     margin-top: 50px;">
-                                            <div class="price">
-                                                <h5>
-                                                    Seize the Day Desk Calendar</h5>
-                                                <h5 class="price-text-color">
-                                                    $14.99</h5>
-                                            </div>
-                                            <div class="rating hidden-sm">
-                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="fa fa-star"></i>
-                                            </div>
+                                <div class="col-sm-3 ">
+                                    <div class="col-item ">
+                                        <div class="photo ">
+                                            <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%203.jfif " class="img-responsive " alt="a " />
                                         </div>
-                                        <div class="separator clear-left"  style="margin-top: 10px;">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
-                                        </div>
-                                        <div class="clearfix">
+                                        <div class="info ">
+                                            <div class="row " style="margin-left: 0px; margin-top: -8px; ">
+                                                <div class="price ">
+                                                    <h5>Americas National Parks Desk Calendar
+                                                    </h5>
+                                                    <h5 class="price-text-color ">
+                                                        $88.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm ">
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left " style="margin-top: 30px; ">
+                                                <p class="btn-add ">
+                                                    <i class="fa fa-shopping-cart "></i><a href="# " class="hidden-sm ">Add to cart</a></p>
+                                                <p class="btn-details ">
+                                                    <i class="fa fa-list "></i><a href="# " class="hidden-sm ">More details</a></p>
+                                            </div>
+                                            <div class="clearfix ">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%205.jfif" class="img-responsive" alt="a" />
+                                <div class="col-sm-3 ">
+                                    <div class="col-item ">
+                                        <div class="photo ">
+                                            <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%204c.jfif " class="img-responsive " alt="a " />
+                                        </div>
+                                        <div class="info ">
+                                            <div class="row " style="margin-left: 0px; margin-top: 50px; ">
+                                                <div class="price ">
+                                                    <h5>
+                                                        Seize the Day Desk Calendar</h5>
+                                                    <h5 class="price-text-color ">
+                                                        $14.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm ">
+                                                    <i class="price-text-color fa fa-star "></i><i class="price-text-color fa fa-star ">
+                                                </i><i class="price-text-color fa fa-star "></i><i class="price-text-color fa fa-star ">
+                                                </i><i class="fa fa-star "></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left " style="margin-top: 10px; ">
+                                                <p class="btn-add ">
+                                                    <i class="fa fa-shopping-cart "></i><a href="# " class="hidden-sm ">Add to cart</a></p>
+                                                <p class="btn-details ">
+                                                    <i class="fa fa-list "></i><a href="# " class="hidden-sm ">More details</a></p>
+                                            </div>
+                                            <div class="clearfix ">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="info">
-                                        <div class="row" style="margin-left: 0px;     margin-top: 50px;">
-                                            <div class="price">
-                                                <h5>
-                                                    Live Love Dream 365 Calendar</h5>
-                                                <h5 class="price-text-color">
-                                                    $9.99</h5>
-                                            </div>
-                                            <div class="rating hidden-sm">
-                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="fa fa-star"></i>
-                                            </div>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <div class="col-item ">
+                                        <div class="photo ">
+                                            <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%205.jfif " class="img-responsive " alt="a " />
                                         </div>
-                                        <div class="separator clear-left"  style="margin-top: 10px;">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
-                                        </div>
-                                        <div class="clearfix">
+                                        <div class="info ">
+                                            <div class="row " style="margin-left: 0px; margin-top: 50px; ">
+                                                <div class="price ">
+                                                    <h5>
+                                                        Live Love Dream 365 Calendar</h5>
+                                                    <h5 class="price-text-color ">
+                                                        $9.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm ">
+                                                    <i class="price-text-color fa fa-star "></i><i class="price-text-color fa fa-star ">
+                                                </i><i class="price-text-color fa fa-star "></i><i class="price-text-color fa fa-star ">
+                                                </i><i class="fa fa-star "></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left " style="margin-top: 10px; ">
+                                                <p class="btn-add ">
+                                                    <i class="fa fa-shopping-cart "></i><a href="# " class="hidden-sm ">Add to cart</a></p>
+                                                <p class="btn-details ">
+                                                    <i class="fa fa-list "></i><a href="# " class="hidden-sm ">More details</a></p>
+                                            </div>
+                                            <div class="clearfix ">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -251,85 +221,77 @@
                 </div>
             </div>
         </div>
-      </div>
     </div>
     <!-- footer -->
-    <footer style="margin-top: 40px;">
-      <div class=" container-fluid bgt1 ">
-        <br>
-        <div class="container ctnt2">
-            <h5 style=" font-size: 12px;
-            letter-spacing: 4px;
-            font-weight: 500;
-            width: 100%;
-            margin: 15px 0 0 0;
-            text-transform: uppercase;
-            display: block;
-            color: black;">stay connected</h5>
-            <hr style="border-color: #ad974f;
-            width: 5%;">
+    <footer style="margin-top: 40px; ">
+        <div class=" container-fluid bgt1 ">
             <br>
-            <div class="scoial">
-                <a href="" class="txa"><i class="fa fa-facebook-square icon iconfb"></i>
+            <div class="container ctnt2 ">
+                <h5 style=" font-size: 12px; letter-spacing: 4px; font-weight: 500; width: 100%; margin: 15px 0 0 0; text-transform: uppercase; display: block; color: black; ">stay connected</h5>
+                <hr style="border-color: #ad974f; width: 5%; ">
+                <br>
+                <div class="scoial ">
+                    <a href=" " class="txa "><i class="fa fa-facebook-square icon iconfb "></i>
                 </a>
-                <a href="" class="txa">
-                    <i class="fa fa-instagram icon"></i>
-                </a>
-                <a href="" class="txa">
-                    <i class="fa fa-linkedin icon"></i>
-                </a>
+                    <a href=" " class="txa ">
+                        <i class="fa fa-instagram icon "></i>
+                    </a>
+                    <a href=" " class="txa ">
+                        <i class="fa fa-linkedin icon "></i>
+                    </a>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+        <br>
+        <div class="container ">
+            <div class="link-T ">
+                <a href=" " class=" ">Canlendar</a>
+                <a href=" " class=" ">Diaries</a>
+                <a href=" " class=" ">Journal</a>
+                <a href=" " class=" ">Folders</a>
+                <a href=" " class=" ">Contact</a>
             </div>
         </div>
-        <br><br><br>
-    </div>
-    <br>
-    <div class="container ">
-        <div class="link-T">
-            <a href="" class="">Canlendar</a>
-            <a href="" class="">Diaries</a>
-            <a href="" class=" ">Journal</a>
-            <a href="" class="">Folders</a>
-            <a href="" class="">Contact</a>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-5">
-                <p class="color-t">
-                    COMPANY RYANA CALENDARS</p>
-                <p class="style-pFT"><i class="fa fa-map-marker color-t"></i> 56 LE DUAN ST - DA NANG CITY</p>
-                <p class="style-pFT"><i class="fa fa-phone color-t"></i> PHONE:0236 095385</p>
-                <p class="style-pFT"><i class="fa fa-envelope color-t"></i></i> MAIL:RyanaCalendars@gmail.com</p>
-                <p class="style-pFT"><i class="fa fa-fax color-t"></i> FAX:(650)123-4567</p>
-            </div>
+        <br>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-5 ">
+                    <p class="color-t ">
+                        COMPANY RYANA CALENDARS</p>
+                    <p class="style-pFT "><i class="fa fa-map-marker color-t "></i> 56 LE DUAN ST - DA NANG CITY</p>
+                    <p class="style-pFT "><i class="fa fa-phone color-t "></i> PHONE:0236 095385</p>
+                    <p class="style-pFT "><i class="fa fa-envelope color-t "></i></i> MAIL:RyanaCalendars@gmail.com</p>
+                    <p class="style-pFT "><i class="fa fa-fax color-t "></i> FAX:(650)123-4567</p>
+                </div>
 
-            <div class="col-4">
+                <div class="col-4 ">
 
-                <p class="color-t">
-                    CUSTOMER SUPPORT</p>
-                <p class="style-pFT">
-                    <a href="" class="spft">SHOPPING GUIDE</a></p>
-                <P class="style-pFT ">
-                    <a href="" class="spft">PAYMENT GUIDE</a>
-                </P>
-                <P class="style-pFT ">
-                    <a href="" class="spft">WARRANTY POLICY</a></P>
-            </div>
-            <div class="col-3 ">
-                <p class="color-t ">
-                    PAYMENT METHODS</p>
+                    <p class="color-t ">
+                        CUSTOMER SUPPORT</p>
+                    <p class="style-pFT ">
+                        <a href=" " class="spft ">SHOPPING GUIDE</a></p>
+                    <P class="style-pFT ">
+                        <a href=" " class="spft ">PAYMENT GUIDE</a>
+                    </P>
+                    <P class="style-pFT ">
+                        <a href=" " class="spft ">WARRANTY POLICY</a></P>
+                </div>
+                <div class="col-3 ">
+                    <p class="color-t ">
+                        PAYMENT METHODS</p>
 
-                <p>
-                    <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg " width="54 " alt=" ">
-                    <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg " width="54 " alt=" ">
-                    <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/jcb.svg " width="54 " alt=" ">
-                </p>
+                    <p>
+                        <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg " width="54 " alt=" ">
+                        <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg " width="54 " alt=" ">
+                        <img class="icon " src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/jcb.svg " width="54 " alt=" ">
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <br>
-    <p style="text-align: center; font-size: 12px; letter-spacing: 3px; ">2020 - All rights reserved to ©Ryana Calendars</p>
+        <br>
+        <p style="text-align: center; font-size: 12px; letter-spacing: 3px; ">2020 - All rights reserved to ©Ryana Calendars</p>
     </footer>
 </body>
+
 </html>
