@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../Footercln/css-TFT/ftclone.css">
     <link rel="stylesheet" href="../Footercln/icon/font-awesome/css/all.css">
     <link rel="stylesheet" href="../boxchat/boxchat.css">
+    <link rel="stylesheet" href="../Menu/style.css">
+    <link rel="stylesheet" href="../Menu/stylelogin/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="../boxchat/boxchat.js"></script>
 
@@ -18,8 +20,66 @@
 </head>
 
 <body>
-    <br><br>
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <header class="nav-menu navbar-fixed-top">
+        <div class="container">
+            <div class="row navbar-light" style="display: inline-block;">
+                <div class="nav-logo col-lg-4">
+                    <a href="#"><img src="../Menu/image/your-logo-ig.PNG" style="width: 80%;"></a>
+                </div>
+                <div class="navbar-collapse col-lg-8" style="width: unset;">
+                    <ul style="margin-top: 25px;">
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="../Products/producst-T.html">Product</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                        <li><i class="fa fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto; font-size: 22px; color: black;"></i>
+                            <div class="modal" id="id01">
+                                <form class="modal-content animate">
+                                    <div class="img-container">
+                                        <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                                        <img src="../Image cho project/5a991c82be987_thumb900.png" class="avatar">
+                                    </div>
+                                    <div class="container pd-16">
+                                        <label><b>Username</b></label>
+                                        <input class="input-name" type="text" placeholder="Enter Username" required>
+                                        <label><b>Password</b></label>
+                                        <input class="input-psw" type="password" placeholder="Enter Password" required>
+                                        <button type="submit" class="btn-login">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked"> Remember me
+                                        </label>
+                                    </div>
+                                    <div class="container pd-16" style="background-color: #f1f1f1;">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password ?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                var modal = document.getElementById('id01');
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="container ctnfont-T">
+        <br><br><br><br><br><br>
         <div class="row">
             <div class="col">
                 <h5 style="letter-spacing: 4px; font-size: 15px;" class="tcenter-T">MAIL US</h5>

@@ -1,16 +1,25 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
-a:hover{
+a:hover {
     text-decoration: none;
 }
+<<<<<<< HEAD
 a:link{
     text-decoration: none;
 }
 .nav-menu .navbar-collapse li{
+=======
+
+a:link {
+    text-decoration: none;
+}
+
+.nav-menu .navbar-collapse li {
+>>>>>>> ce0e8bd562c06629d12ac0998e7202f58524538d
     display: inline;
     list-style: none;
-
 }
-.nav-menu .navbar-collapse a{
+
+.nav-menu .navbar-collapse a {
     color: black;
     font-size: 20px;
     padding-left: 25px;
@@ -18,58 +27,67 @@ a:link{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.navbar-fixed-top.scrolled{
+
+.navbar-fixed-top.scrolled {
     background-color: #fff !important;
     transition: background-color 200ms linear;
     border-bottom: 3px solid #ad974f;
 }
-.navbar-fixed-top.scrolled .navbar-light{
+
+.navbar-fixed-top.scrolled .navbar-light {
     color: black;
-  }
-.nav-menu{
+}
+
+.nav-menu {
     z-index: 999;
     overflow-x: hidden;
     position: fixed;
     width: 100%;
 }
-.carousel-caption{
-    color:#fff;
+
+.carousel-caption {
+    color: #fff;
     position: absolute;
     top: 45%;
 }
-.carousel-caption a{
+
+.carousel-caption a {
     color: black;
     padding: 20px;
     background: lightgrey;
     border-radius: 10px;
 }
-.carousel-caption h3{
-    font-family:  'Great Vibes', Helvetica, sans-serif;
+
+.carousel-caption h3 {
+    font-family: 'Great Vibes', Helvetica, sans-serif;
 }
-.hr{
+
+.hr {
     margin: auto;
     margin-top: 20px;
     width: 80%;
     height: 1px;
     background: #ad974f;
 }
-.contact-site .row img{
+
+.contact-site .row img {
     vertical-align: middle;
     width: 75%;
 }
-@media only screen and (max-width: 375px) {
-    .nav-logo{
+
+@media only screen and (max-width: 420px) {
+    .nav-logo {
         text-align: center;
     }
-    .navbar-collapse{
+    .navbar-collapse {
         width: unset;
         margin-left: -15px;
         margin-right: -18px;
         display: flex;
     }
-    .navbar-collapse ul{
-    margin-top: 25px;
-    margin-left: -20px;
+    .navbar-collapse ul {
+        margin-top: 25px;
+        margin-left: -20px;
     }
     .nav-menu .navbar-collapse a {
         background: #ad974f;
@@ -80,21 +98,22 @@ a:link{
         padding-right: 5px;
         border-radius: 20px;
     }
-    .contact-site h4{
+    .contact-site h4 {
         text-align: center;
     }
-  }
-  @media only screen and (max-width: 1024px) {
-      .navbar-collapse{
-          margin-left: -25px;
-      }
-      .navbar-collapse ul{
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar-collapse {
+        margin-left: -25px;
+    }
+    .navbar-collapse ul {
         text-align: center;
-      }
-      .nav-logo{
-          text-align: center;
-      }
-      .navbar-collapse a{
-          padding-left: 10px;
-      }
-  }
+    }
+    .nav-logo {
+        text-align: center;
+    }
+    .navbar-collapse a {
+        padding-left: 10px;
+    }
+}
