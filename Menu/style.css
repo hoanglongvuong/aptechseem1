@@ -2,19 +2,12 @@
 a:hover {
     text-decoration: none;
 }
-<<<<<<< HEAD
-a:link{
-    text-decoration: none;
-}
-.nav-menu .navbar-collapse li{
-=======
 
 a:link {
     text-decoration: none;
 }
 
 .nav-menu .navbar-collapse li {
->>>>>>> ce0e8bd562c06629d12ac0998e7202f58524538d
     display: inline;
     list-style: none;
 }
