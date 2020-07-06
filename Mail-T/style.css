@@ -1,0 +1,112 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+a:hover {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.nav-menu .navbar-collapse li {
+    display: inline;
+    list-style: none;
+}
+
+.nav-menu .navbar-collapse a {
+    color: black;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    border-bottom: 3px solid #ad974f;
+}
+
+.navbar-fixed-top.scrolled .navbar-light {
+    color: black;
+}
+
+.nav-menu {
+    z-index: 999;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.carousel-caption {
+    color: #fff;
+    position: absolute;
+    top: 45%;
+}
+
+.carousel-caption a {
+    color: black;
+    padding: 20px;
+    background: lightgrey;
+    border-radius: 10px;
+}
+
+.carousel-caption h3 {
+    font-family: 'Great Vibes', Helvetica, sans-serif;
+}
+
+.hr {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 1px;
+    background: #ad974f;
+}
+
+.contact-site .row img {
+    vertical-align: middle;
+    width: 75%;
+}
+
+@media only screen and (max-width: 420px) {
+    .nav-logo {
+        text-align: center;
+    }
+    .navbar-collapse {
+        width: unset;
+        margin-left: -15px;
+        margin-right: -18px;
+        display: flex;
+    }
+    .navbar-collapse ul {
+        margin-top: 25px;
+        margin-left: -20px;
+    }
+    .nav-menu .navbar-collapse a {
+        background: #ad974f;
+        color: #000;
+        margin: 0px;
+        font-size: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 20px;
+    }
+    .contact-site h4 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar-collapse {
+        margin-left: -25px;
+    }
+    .navbar-collapse ul {
+        text-align: center;
+    }
+    .nav-logo {
+        text-align: center;
+    }
+    .navbar-collapse a {
+        padding-left: 10px;
+    }
+}
