@@ -2,6 +2,14 @@
                                 color: #ad974f;
                             }
                             
+                            .text-color-t:visited {
+                                color: #ad974f;
+                            }
+                            
+                            .text-color-t:hover {
+                                color: #000;
+                            }
+                            
                             .ctnfont-T {
                                 font-family: 'Montserrat', sans-serif;
                             }
