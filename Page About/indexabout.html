@@ -14,6 +14,8 @@
     <link href="../Footercln/css-TFT/ftclone.css" rel="stylesheet">
     <link href="../Menu/style.css" rel="stylesheet">
     <link href="../Menu/stylelogin/style.css" rel="stylesheet">
+    <link href="../boxchat/boxchat.css" rel="stylesheet">
+    <script src="../boxchat/boxchat.js"></script>
 </head>
 <body>
     <script>
@@ -77,7 +79,7 @@
     <div class="section">
         <div class="container">
             <div class="k-title-header mt-100">
-                <a href="../Page chính/indexpagechinh.html" class="k-gold">HOME<span class="k-white">/ABOUT</span></a>
+                <a href="../Home Page/IndexHomePage.html" class="k-gold">HOME<span class="k-white">/ABOUT</span></a>
             </div>
         </div>
         <div class="video-header">
@@ -373,5 +375,46 @@
         <br>
         <p style="text-align: center; font-size: 12px; letter-spacing: 3px; ">2020 - All rights reserved to ©Ryana Calendars</p>
     </footer>
+    <div class="chat-widget" id="chatWidget">
+        <!-- chat toggle -->
+        <input id="chat-widget-toggle" class="chat-widget-toggle" type="checkbox">
+        <!-- chat close button -->
+        <label title="close chat" for="chat-widget-toggle" class="chat-widget-button chat-close-button">
+            X
+        </label>
+        <div class="chat-box">
+            <div class="chat-message-box">
+                <!--  chat header -->
+                <div class="chat-header">
+                    <h1 class="chat-title">
+                        <span class="chat-title-primary">Ryana Calendars</span>
+                        <span class="chat-title-sub">CEO</span>
+                    </h1>
+                </div>
+                <!--   chat message  -->
+                <div class="chat-messages">
+                    <div class="chat-messages-content">
+                        <div class="chat-message -left">
+
+                            <div class="chat-message-text">
+                                Hello everyone!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- chat input box  -->
+                <div class="chat-form-box">
+                    <form class="chat-form" id="chat-form" name="chat-form">
+                        <input class="chat-form-input" type="text" placeholder="Type your message....">
+                        <button title="send message" type="submit" class="chat-form-button">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- chat open button -->
+        <label title="open chat" for="chat-widget-toggle" class="chat-widget-button chat-open-button">
+            <h5 style=" color: #fff;">Chat US</h5>
+        </label>
+    </div>
 </body>
 </html>
