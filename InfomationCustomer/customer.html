@@ -11,11 +11,13 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="../Footercln/css-TFT/ftclone.css" rel="stylesheet">
     <link rel="stylesheet" href="../boxchat/boxchat.css">
-    <script src="../menu-contact-our client/menu.js"></script>
-    <script src="../boxchat/boxchat.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../Menu/style.css">
     <link rel="stylesheet" href="../Menu/stylelogin/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="../menu-contact-our client/menu.js"></script>
+    <script src="../boxchat/boxchat.js"></script>
 
 </head>
 
@@ -205,9 +207,13 @@
                 <a href="../Products/journal.html" class="spft ">Journal</a>
                 <a href="../Products/folderdisplay.html" class="spft">Folders</a>
                 <a href="../Mail-T/mail-T.html" class="spft">Contact</a>
-                <a href="../Products/PriceProduct.xlsx" class="spft " style=" font-size: 20px;" download>
-                    <i class="fas fa-download"></i>
-                </a>
+                <a href="../Products/PriceProduct.xlsx" class="spft " data-toggle="tooltip" data-placement="bottom" title="Click Download!" download>Price List</a>
+
+                <script>
+                    $(document).ready(function() {
+                        $('[data-toggle="tooltip"]').tooltip();
+                    });
+                </script>
             </div>
         </div>
         <br>
