@@ -503,12 +503,13 @@
     border-width: 3px;
     border-style: solid;
   }
-  .item h6 {
+  .review {
     font-size: 18px;
     font-weight: 200;
     margin: 10px 0;
     line-height: 1.8em;
     width: 100%;
+    font-family: Montserrat ,sans-serif !important;
   }
   .name {
     font-size: 14px;
