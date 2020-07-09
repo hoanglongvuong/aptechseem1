@@ -1,0 +1,45 @@
+.titleguide {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.centerguide {
+    text-align: center;
+}
+
+.loginshopping {
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: whitesmoke;
+}
+
+.loginshopping h3 {
+    font-size: 1.6rem;
+}
+
+.loginshopping p {
+    font-size: 26px;
+}
+
+.textguide {
+    font-size: 26px;
+}
+
+.designbg {
+    margin-top: 50px;
+}
+
+.searchstyle {
+    margin-top: 50px;
+}
+
+@media (max-width:480px) {
+    .textguide {
+        font-size: 0.8rem;
+    }
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
