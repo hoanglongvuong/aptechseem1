@@ -1,0 +1,62 @@
+.body-T {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bgt1 {
+    background-image: url("../img-TFT1/ftimg.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.ctnt2 {
+    background-color: transparent;
+    text-align: center;
+}
+
+.txa {
+    text-decoration: none;
+    color: #ad974f;
+    margin: 5px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.txa:hover {
+    color: #ad974f;
+    border-bottom: 0px solid transparent;
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 22px;
+    text-align: center;
+    margin-left: 1px;
+}
+
+.iconfb {
+    margin-left: 2px;
+}
+
+.link-T {
+    text-align: center;
+}
+
+.link-T a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.textft-T {
+    opacity: .9;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}

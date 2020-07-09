@@ -112,13 +112,13 @@ label.star:before {
 
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
 .col-item {
-    height: 480px;
+    height: 370px;
     border: 1px solid #ad974f;
     border-radius: 5px;
 }
 
 .col-item .photo img {
-    height: 100%;
+    height: 191.88px;
     width: 100%;
     object-fit: unset;
     padding: 5px;

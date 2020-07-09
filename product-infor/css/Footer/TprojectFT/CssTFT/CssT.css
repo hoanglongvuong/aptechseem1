@@ -1,0 +1,103 @@
+            .body-T {
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            .bgt1 {
+                background-image: url("../imgT/rawpixel-633847-unsplash-1.jpg");
+                background-size: cover;
+                background-position: bottom;
+                height: 790px;
+            }
+            
+            .ctnt1 {
+                box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.1);
+                background-color: white;
+                text-align: center;
+                height: 450px;
+            }
+            
+            .color-t {
+                color: #ad974f;
+            }
+            
+            .group-T {
+                max-width: 450px;
+                background-color: whitesmoke;
+                border-top-right-radius: 0;
+            }
+            
+            .btnt1 {
+                border-top-left-radius: 0;
+                height: 70px;
+                border-bottom-left-radius: 0;
+                background-color: black;
+                min-width: 150px;
+            }
+            
+            .btnt1:hover {
+                background-color: gray;
+            }
+            
+            .group-T1 {
+                margin: 0 auto;
+                position: relative;
+                width: 70%;
+            }
+            
+            .group-T:hover {
+                background-color: whitesmoke;
+            }
+            
+            .ctnt2 {
+                background-color: transparent;
+                text-align: center;
+                margin-top: 63px;
+            }
+            
+            .txa {
+                text-decoration: none;
+                color: #ad974f;
+                margin: 5px;
+                background-color: white;
+                padding: 15px;
+                border-radius: 5px;
+            }
+            
+            .txa:hover {
+                color: #ad974f;
+                border-bottom: 0px solid transparent;
+                text-decoration: none;
+            }
+            
+            .icon {
+                font-size: 22px;
+                text-align: center;
+                margin-left: 1px;
+            }
+            
+            .iconfb {
+                margin-left: 2px;
+            }
+            
+            .link-T {
+                text-align: center;
+            }
+            
+            .link-T a {
+                color: inherit;
+                text-decoration: none;
+                font-size: 10px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 10px;
+            }
+            
+            .textft-T {
+                opacity: .9;
+                font-size: 11px;
+                text-align: center;
+                width: 100%;
+                display: inline-block;
+                margin-top: 20px;
+            }
