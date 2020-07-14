@@ -7,6 +7,7 @@
   <title>Home Page</title>
   <link rel="stylesheet" href="../Menu/style.css">
   <link href="../Home Page/StyleHomePage/style.css" rel="stylesheet">
+  <link href="../Menu/stylelogin/style.css" rel="stylesheet">
   <link href="../Bootstrap/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="../Home Page/JavascriptHomePage.js"></script>
   <link href="../Icon-css/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
@@ -59,6 +60,8 @@
                                         <label><b>Password</b></label>
                                         <input class="input-psw" type="password" placeholder="Enter Password" required>
                                         <button type="submit" class="btn-login">Login</button>
+                                        <button type="submit" class="btn-login fb-login"><i class="fab fa-facebook-square"></i> Facebook</button>
+                                        <button type="submit" class="btn-login gmail-login"><i class="fab fa-google"></i> Google</button>
                                         <label>
                                                 <input type="checkbox" checked="checked"> Remember me
                                             </label>
@@ -678,6 +681,72 @@
               </div>
           </div>
           <br>
+          <div class="chat-widget2" id="chatWidget2">
+            <!-- chat toggle -->
+            <input id="chat-widget-toggle2" class="chat-widget-toggle2" type="checkbox">
+            <!-- chat close button -->
+            <label title="Close " for="chat-widget-toggle2" class="chat-widget-button2 chat-close-button2">
+                X
+            </label>
+            <div class="chat-box2">
+                <div class="notification-sale">
+                    <a href="../Products/saledisplay.html">SALE UP TO 50%</a>
+                </div>
+            </div>
+            <!-- chat open button -->
+            <label title="Open " for="chat-widget-toggle2" class="chat-widget-button2 chat-open-button2 ">      
+               <div class="notification-box">
+                   <span class="notification-count">1</span>
+                     <div class="notification-bell">
+                         <span class="bell-top"></span>
+                          <span class="bell-middle"></span>
+                           <span class="bell-bottom"></span>
+                          <span class="bell-rad"></span>
+                     </div>
+               </div>
+            </label>
+        </div>
+        <div class="chat-widget" id="chatWidget">
+            <!-- chat toggle -->
+            <input id="chat-widget-toggle" class="chat-widget-toggle" type="checkbox">
+            <!-- chat close button -->
+            <label title="close chat" for="chat-widget-toggle" class="chat-widget-button chat-close-button">
+                X
+            </label>
+            <div class="chat-box">
+                <div class="chat-message-box">
+                    <!--  chat header -->
+                    <div class="chat-header">
+                        <h1 class="chat-title">
+                            <span class="chat-title-primary">Ryana Calendars</span>
+                            <span class="chat-title-sub">CEO</span>
+                        </h1>
+                    </div>
+                    <!--   chat message  -->
+                    <div class="chat-messages">
+                        <div class="chat-messages-content">
+                            <div class="chat-message -left">
+    
+                                <div class="chat-message-text">
+                                    Hello everyone!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- chat input box  -->
+                    <div class="chat-form-box">
+                        <form class="chat-form" id="chat-form" name="chat-form">
+                            <input class="chat-form-input" type="text" placeholder="Type your message....">
+                            <button title="send message" type="submit" class="chat-form-button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- chat open button -->
+            <label title="open chat" for="chat-widget-toggle" class="chat-widget-button chat-open-button">
+                <h5 style=" color: #fff;">Chat US</h5>
+            </label>
+        </div>
           <p style="text-align: center; font-size: 12px; letter-spacing: 3px; ">2020 - All rights reserved to ©Ryana Calendars</p>
   </body>
 </html>
