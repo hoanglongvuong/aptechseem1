@@ -76,6 +76,25 @@
                     .k-explore {
                         text-align: center;
                     }
+                    /*Search*/
+                    
+                    .has-search .form-control {
+                        padding-left: 2.375rem;
+                        width: 50%;
+                        margin: 50px auto;
+                    }
+                    
+                    .has-search .form-control-feedback {
+                        position: absolute;
+                        z-index: 2;
+                        display: block;
+                        width: 37rem;
+                        height: 1.875rem;
+                        line-height: 1.875rem;
+                        text-align: center;
+                        pointer-events: none;
+                        color: #aaa;
+                    }
                     /* Style the tab content */
                     
                     .work {
@@ -344,6 +363,14 @@
                         }
                         .btnproT {
                             left: 115px;
+                        }
+                        .has-search .form-control {
+                            padding-left: 2.375rem;
+                            width: 100%;
+                            margin: 50px auto;
+                        }
+                        .has-search .form-control-feedback {
+                            width: 2.5rem;
                         }
                     }
                     

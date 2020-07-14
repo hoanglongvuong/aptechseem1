@@ -26,7 +26,7 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color: #888;
-    max-width: 600px;
+    max-width: 400px;
 }
 .animate {
     -webkit-animation: animatezoom 0.6s;
@@ -44,7 +44,7 @@ body{
 }
 .img-container{
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 12px 0 12px 0;
     position: relative;
 }
 .close{
@@ -62,7 +62,7 @@ body{
 img.avatar{
     width: 30%;
     border-radius: 50%;
-    margin-top: 16px;
+    margin-top: 0px ;
     vertical-align: middle;
 }
 .pd-16{
@@ -85,6 +85,12 @@ img.avatar{
     border: none;
     cursor: pointer;
     width: 100%;
+}
+.fb-login{
+    background-color: #1877f2;
+}
+.gmail-login{
+    background-color: #d93025;
 }
 .btn-login:hover{
     opacity: 0.8;
