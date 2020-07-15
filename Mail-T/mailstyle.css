@@ -119,3 +119,29 @@
                             .pulse:hover {
                                 animation-name: pulse;
                             }
+                            
+                            .containerimgmail {
+                                position: relative;
+                            }
+                            
+                            .overleyimgmail {
+                                position: absolute;
+                                bottom: 0;
+                                left: 14px;
+                                background-color: wheat;
+                                width: 92.5%;
+                                height: 0;
+                                transition: .5s ease;
+                                overflow: hidden;
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                            
+                            .containerimgmail:hover .overleyimgmail {
+                                height: 30%;
+                            }
+                            
+                            .img-circle {
+                                height: 100%;
+                                width: 100%;
+                            }
