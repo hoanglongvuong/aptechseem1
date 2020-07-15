@@ -1,0 +1,147 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+a:hover{
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+}
+.nav-menu .navbar-collapse li{
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+.nav-menu .navbar-collapse a{
+    color: black;
+    font-size: 23px;
+    padding-right: 25px;
+}
+.navbar-fixed-top.scrolled{
+    background-color: white !important;
+    transition: background-color 200ms linear;
+}
+.navbar-fixed-top.scrolled .navbar-light{
+    color:rgb(0, 0, 0);
+  }
+.nav-menu{
+    z-index: 999;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+}
+.carousel-caption{
+    color:rgba(233, 175, 16, 0.39);
+    position: absolute;
+    top: 45%;
+}
+.carousel-caption a{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #ad974f;
+    border-radius: 10px;
+}
+.carousel-caption h3{
+    font-family:  'Great Vibes', Helvetica, sans-serif;
+}
+.hr{
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 1px;
+    background: #ad974f;
+}
+.contact-site .row img{
+    vertical-align: middle;
+    width: 75%;
+}
+/* sign-up */
+.navbar-collapse .log-in{
+    position: relative;
+    position: fixed;
+}
+.navbar-collapse .log-in .sign-up-page{
+    display: none;
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 62px;
+    left: -335px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #ad974f;
+    border-radius: 20px;
+}
+.navbar-collapse .log-in .sign-up-page a{
+    margin: 0;
+    padding: 0;
+}
+.navbar-collapse .log-in:hover .sign-up-page{
+    display: block;
+    z-index: 1000;
+}
+.navbar-collapse .sign-up-page .sign-up{
+    width: 100%;
+    padding: 20px;
+}
+@media (max-width: 992px){
+    .nav-logo img{
+        margin-top: 21px;
+        width: 100%;
+        display: inline;
+    }
+}
+@media (max-width: 992px){
+    .nav-logo{
+        width: 30%;
+        float: left;
+    }
+}
+@media (min-width:992px){
+    .nav-menu .navbar-collapse{
+        width: fit-content;
+        width: 40%;
+        float: left;
+    }
+}
+@media (max-width:992px){
+    .nav-menu .navbar-collapse a{
+        font-size: 20px;
+        display: inline;
+        padding-right: 15px;
+    }
+}
+@media (min-width: 768px){
+    .nav-logo img{
+        width: 100%;
+        display: inline;
+    }
+}
+@media (max-width: 768px){
+    .nav-logo{
+        width: 30%;
+        float: left;
+    }
+}
+@media (min-width:768px){
+    .nav-menu .navbar-collapse{
+        width: 30%;
+        float: left;
+    }
+    .nav-menu .navbar-collapse u{
+        margin-top: 6px;
+    }
+}
+@media (max-width:768px){
+    .nav-menu .navbar-collapse a{
+        font-size: 10px;
+        display: inline;
+        padding-right: 15px;
+    }
+}
+.gold-line{
+    background: #ad974f;
+    font-size: 20px;
+}

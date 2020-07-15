@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="product-infor.css">
     <link rel="stylesheet" href="../Footercln/css-TFT/ftclone.css">
     <link rel="stylesheet" href="../Footercln/icon/font-awesome/css/all.css">
-    <link rel="stylesheet" href="menu/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylelogin/style.css">
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -26,19 +31,52 @@
             });
         });
     </script>
-    <header class="nav-menu navbar-fixed-top" style="background: white;">
+    <header class="nav-menu navbar-fixed-top">
         <div class="container">
-            <div class="row navbar-light">
+            <div class="row navbar-light" style="display: inline-block;">
                 <div class="nav-logo col-lg-4">
-                    <img src="image/your-logo-ig.png" width="250px;">
+                    <a href="#"><img src="../Menu/image/your-logo-ig.PNG" style="width: 80%;"></a>
                 </div>
-                <div class="navbar-collapse col-lg-8">
-                    <ul style="margin-top: 30px;">
-                        <li><a href="#">Calender</a></li>
+                <div class="navbar-collapse col-lg-8" style="width: unset;">
+                    <ul style="margin-top: 25px;">
+                        <li><a href="#">Explore</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Product</a></li>
+                        <li><a href="../Products/producst-T.html">Product</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                        <li>
+                            <a><i class="fa fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto; font-size: 18px; color: black;"></i></a>
+                            <div class="modal" id="id01">
+                                <form class="modal-content animate">
+                                    <div class="img-container">
+                                        <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                                        <img src="../Image cho project/5a991c82be987_thumb900.png" class="avatar">
+                                    </div>
+                                    <div class="container pd-16">
+                                        <label><b>Username</b></label>
+                                        <input class="input-name" type="text" placeholder="Enter Username" required>
+                                        <label><b>Password</b></label>
+                                        <input class="input-psw" type="password" placeholder="Enter Password" required>
+                                        <button type="submit" class="btn-login">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked"> Remember me
+                                        </label>
+                                    </div>
+                                    <div class="container pd-16" style="background-color: #f1f1f1;">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password ?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                var modal = document.getElementById('id01');
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +91,7 @@
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="shadowproducts">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="../Image cho project/Folders 4.jpg" style="height: 500px; object-fit: contain;">
                     </div>
@@ -132,10 +170,10 @@
                                 <div class="col-sm-3">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%202b.jfif" class="img-responsive" alt="a" />
+                                            <img src="../Image cho project/Calendar 2.jfif" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
-                                            <div class="row" style="margin-left: 0px;     padding-top: 50px;">
+                                            <div class="row" style="margin-left: 0px;">
                                                 <div class="price">
                                                     <h5>Obama Wall Calendar</h5>
                                                     <h5 class="price-text-color">$10.5 (-30% OFF)</h5>
@@ -146,7 +184,7 @@
                                                     </i><i class="fa fa-star"></i>
                                                 </div>
                                             </div>
-                                            <div class="separator clear-left" style="margin-top: 30px;">
+                                            <div class="separator clear-left" style="margin-top: 20px;">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
                                                 <p class="btn-details">
@@ -160,10 +198,10 @@
                                 <div class="col-sm-3">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%203.jfif" class="img-responsive" alt="a" />
+                                            <img src="../Image cho project/Calendar 3.jfif" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
-                                            <div class="row" style="margin-left: 0px;  margin-top: -8px;">
+                                            <div class="row" style="margin-left: 0px;">
                                                 <div class="price">
                                                     <h5>Americas National Parks Desk Calendar
                                                     </h5>
@@ -173,7 +211,7 @@
                                                 <div class="rating hidden-sm">
                                                 </div>
                                             </div>
-                                            <div class="separator clear-left" style="margin-top: 30px;">
+                                            <div class="separator clear-left" style="margin-top: 25px;">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
                                                 <p class="btn-details">
@@ -187,10 +225,10 @@
                                 <div class="col-sm-3">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%204c.jfif" class="img-responsive" alt="a" />
+                                            <img src="../Image cho project/Calendar 4.jfif" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
-                                            <div class="row" style="margin-left: 0px;     margin-top: 50px;">
+                                            <div class="row" style="margin-left: 0px;">
                                                 <div class="price">
                                                     <h5>
                                                         Seize the Day Desk Calendar</h5>
@@ -203,7 +241,7 @@
                                                     </i><i class="fa fa-star"></i>
                                                 </div>
                                             </div>
-                                            <div class="separator clear-left" style="margin-top: 10px;">
+                                            <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
                                                 <p class="btn-details">
@@ -217,10 +255,10 @@
                                 <div class="col-sm-3">
                                     <div class="col-item">
                                         <div class="photo">
-                                            <img src="file:///C:/Users/admin/Desktop/aptechseem1/Image%20cho%20project/Calendar%205.jfif" class="img-responsive" alt="a" />
+                                            <img src="../Image cho project/Calendar 5.jfif" class="img-responsive" alt="a" />
                                         </div>
                                         <div class="info">
-                                            <div class="row" style="margin-left: 0px;     margin-top: 50px;">
+                                            <div class="row" style="margin-left: 0px;">
                                                 <div class="price">
                                                     <h5>
                                                         Live Love Dream 365 Calendar</h5>
@@ -233,7 +271,7 @@
                                                     </i><i class="fa fa-star"></i>
                                                 </div>
                                             </div>
-                                            <div class="separator clear-left" style="margin-top: 10px;">
+                                            <div class="separator clear-left">
                                                 <p class="btn-add">
                                                     <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
                                                 <p class="btn-details">
