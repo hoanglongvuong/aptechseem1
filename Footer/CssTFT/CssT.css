@@ -24,12 +24,6 @@
                     color: #ad974f;
                 }
                 
-                .group-T {
-                    max-width: 450px;
-                    background-color: whitesmoke;
-                    border-top-right-radius: 0;
-                }
-                
                 .btnt1 {
                     border-top-left-radius: 0;
                     height: 70px;
@@ -52,20 +46,13 @@
                     .scoial .txa {
                         padding: 15px;
                     }
+                    .formsend .input-group {
+                        width: 100%;
+                    }
                 }
                 
                 .btnt1:hover {
                     background-color: gray;
-                }
-                
-                .group-T1 {
-                    margin: 0 auto;
-                    position: relative;
-                    width: 70%;
-                }
-                
-                .group-T:hover {
-                    background-color: whitesmoke;
                 }
                 
                 .ctnt2 {
@@ -163,13 +150,16 @@
                     color: #000;
                 }
                 
-                .tooltip::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 100%;
-                    left: 50%;
-                    margin-left: -5px;
-                    border-width: 5px;
-                    border-style: solid;
-                    border-color: transparent transparent black transparent;
+                .input-group {
+                    width: 90%;
+                }
+                
+                .form-controlstyle {
+                    padding: 30px;
+                }
+                
+                .btnfooter {
+                    padding: 10px;
+                    background-color: #ad974f;
+                    color: black;
                 }

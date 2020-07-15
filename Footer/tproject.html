@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="../Footer/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="../Footer/CssTFT/CssT.css" rel=" stylesheet ">
     <link href="../Footer/icon/font-awesome/css/all.css " rel="stylesheet ">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -12,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
-<body class="body-T">
+<footer class="body-T">
     <div class=" container-fluid bgt1 ">
         <br><br><br><br>
         <div class="container ctnt1">
@@ -36,11 +36,11 @@
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-11">
-                                <form action="/action_page.php">
-                                    <div class="input-group group-T1 ">
-                                        <input type="text" class="form-control group-T" placeholder=" Email address*" required>
-                                        <div class="input-group-append ">
-                                            <input type="submit" value="SEND" class="btn btn-success btnt1">
+                                <form action="/action_page.php" class="formsend">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control form-controlstyle" placeholder=" Email address*" aria-label="Recipient's username" aria-describedby="button-addon2" required="">
+                                        <div class="input-group-append">
+                                            <input class="btn btn-outline-secondary btnfooter" type="submit" id="button-addon2" value="SEND"></input>
                                         </div>
                                     </div>
                                 </form>
@@ -130,6 +130,6 @@
         </div>
         <br>
         <p style="text-align: center; font-size: 12px; letter-spacing: 3px; ">2020 - All rights reserved to ©Ryana Calendars</p>
-</body>
+</footer>
 
 </html>
