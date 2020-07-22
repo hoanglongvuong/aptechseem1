@@ -2,6 +2,9 @@
 a:hover {
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 a:link {
     text-decoration: none;
@@ -33,7 +36,6 @@ a:link {
 
 .nav-menu {
     z-index: 999;
-    overflow-x: hidden;
     position: fixed;
     width: 100%;
 }
@@ -69,9 +71,6 @@ a:link {
 }
 
 @media only screen and (max-width: 420px) {
-    .nav-logo {
-        text-align: center;
-    }
     .navbar-collapse {
         width: unset;
         margin-left: -15px;
@@ -109,4 +108,79 @@ a:link {
     .navbar-collapse a {
         padding-left: 10px;
     }
+}
+
+.nav-small{
+    display: none;
+}
+@media only screen and (max-width: 420px) {
+    .nav-logo{
+        float: left;
+        width: 65%;
+    }
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .navbar-collapse{
+        display: none;
+    }
+    .nav-small{
+        display: block;
+    }
+
+    
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ad974fe6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    background-color: #ad974f;
+    padding: 5px 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
 }
