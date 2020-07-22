@@ -2,7 +2,9 @@
 a:hover {
     text-decoration: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 a:link {
     text-decoration: none;
 }
@@ -11,7 +13,6 @@ a:link {
     display: inline;
     list-style: none;
 }
-
 .nav-menu .navbar-collapse a {
     color: black;
     font-size: 20px;
@@ -68,36 +69,6 @@ a:link {
     width: 75%;
 }
 
-@media only screen and (max-width: 420px) {
-    .nav-logo {
-        text-align: center;
-    }
-    .navbar-collapse {
-        width: unset;
-        margin-left: -15px;
-        margin-right: -18px;
-        display: flex;
-    }
-    .navbar-collapse ul {
-        margin-top: 25px;
-        margin-left: -20px;
-    }
-    .nav-menu .navbar-collapse a {
-        background: #ad974f;
-        color: #000;
-        margin: 0px;
-        font-size: 15px;
-        padding-left: 5px;
-        padding-right: 5px;
-        border-radius: 20px;
-    }
-    .contact-site h4 {
-        text-align: center;
-    }
-    .navbar-collapse ul {
-    margin-left: 10px;
-    }
-}
 
 @media only screen and (max-width: 1024px) {
     .navbar-collapse {
@@ -112,4 +83,78 @@ a:link {
     .navbar-collapse a {
         padding-left: 10px;
     }
+}
+.nav-small{
+    display: none;
+}
+@media only screen and (max-width: 420px) {
+    .nav-logo{
+        float: left;
+        width: 65%;
+    }
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .navbar-collapse{
+        display: none;
+    }
+    .nav-small{
+        display: block;
+    }
+
+    
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ad974fe6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    background-color: #ad974f;
+    padding: 5px 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
 }

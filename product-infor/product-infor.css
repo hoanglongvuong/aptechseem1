@@ -107,7 +107,7 @@ label.star:before {
     background: #ad974f;
 }
 .slider-bar ol{
-    left: 50px;
+    left: 49%;
 }
 
 
@@ -229,3 +229,6 @@ label.star:before {
     object-fit: contain;
 }
 
+.shadowproducts img{
+    height: none;
+}
