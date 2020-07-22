@@ -1,146 +1,144 @@
-                            .text-color-t {
-                                color: #ad974f;
-                            }
-                            
-                            .text-color-t:visited {
-                                color: #ad974f;
-                            }
-                            
-                            .text-color-t:hover {
-                                color: #000;
-                            }
-                            
-                            .ctnfont-T {
-                                font-family: 'Montserrat', sans-serif;
-                            }
-                            
-                            .tcenter-T {
-                                text-align: center;
-                            }
-                            
-                            .ctnfont-T .row .col hr {
-                                border: 0.5px solid #ad974f;
-                            }
-                            
-                            .input-T {
-                                width: 50%;
-                                float: left;
-                                padding: 5px 10px;
-                            }
-                            
-                            .bginput-T {
-                                background-color: whitesmoke;
-                                height: 70px;
-                            }
-                            
-                            .input1-T {
-                                width: 100%;
-                                height: 150px;
-                                background-color: whitesmoke;
-                                padding: 20px;
-                            }
-                            
-                            .btnT-1 {
-                                background-color: black;
-                                color: white;
-                                position: relative;
-                                height: 70px;
-                                width: 200px;
-                            }
-                            
-                            .container1 {
-                                width: 40%;
-                                max-width: 100%;
-                                text-align: center;
-                            }
-                            
-                            @media (max-width:480px) {
-                                .ctnfont-T {
-                                    width: 100%;
-                                }
-                                .btnT-1 {
-                                    width: 150px;
-                                }
-                                .container-contactstockitst .row-contactstockitst .col-4 {
-                                    max-width: 100%;
-                                    -webkit-flex: 0 0 49%;
-                                    height: 250px;
-                                }
-                                .col-4 .inforstockitst {
-                                    height: 190px;
-                                }
-                                .ctnfont-T .row {
-                                    margin-top: 50px;
-                                }
-                            }
-                            
-                            .container-fluid-contactT {
-                                background-color: rgb(243, 228, 201);
-                                font-family: 'Montserrat', sans-serif;
-                                text-align: center;
-                            }
-                            
-                            .container-fluid-contactT h2 {
-                                font-weight: 800;
-                                letter-spacing: 7px;
-                            }
-                            
-                            .container-fluid-contactT hr {
-                                border-top: 5px solid black;
-                                width: 40px;
-                                margin-top: 40px;
-                            }
-                            
-                            .inforstockitst {
-                                box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
-                                border-radius: 5px;
-                                height: 140px;
-                            }
-                            
-                            .animated:hover {
-                                animation-duration: 1s;
-                            }
-                            
-                            @keyframes pulse {
-                                from {
-                                    -webkit-transform: scale3d(1, 1, 1);
-                                    transform: scale3d(1, 1, 1);
-                                }
-                                50% {
-                                    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-                                    transform: scale3d(1.05, 1.05, 1.05);
-                                }
-                                to {
-                                    -webkit-transform: scale3d(1, 1, 1);
-                                    transform: scale3d(1, 1, 1);
-                                }
-                            }
-                            
-                            .pulse:hover {
-                                animation-name: pulse;
-                            }
-                            
-                            .containerimgmail {
-                                position: relative;
-                            }
-                            
-                            .overleyimgmail {
-                                position: absolute;
-                                bottom: 0;
-                                left: 14px;
-                                background-color: wheat;
-                                width: 92.5%;
-                                height: 0;
-                                transition: .5s ease;
-                                overflow: hidden;
-                                padding-left: 15px;
-                                padding-right: 15px;
-                            }
-                            
-                            .containerimgmail:hover .overleyimgmail {
-                                height: 30%;
-                            }
-                            
-                            .img-circle {
-                                object-fit: cover;
-                            }
+   .text-color-t {
+       color: #ad974f;
+   }
+   
+   .text-color-t:visited {
+       color: #ad974f;
+   }
+   
+   .text-color-t:hover {
+       color: #000;
+   }
+   
+   .ctnfont-T {
+       font-family: 'Montserrat', sans-serif;
+   }
+   
+   .tcenter-T {
+       text-align: center;
+   }
+   
+   .ctnfont-T .row .col hr {
+       border: 0.5px solid #ad974f;
+   }
+   
+   .input-T {
+       width: 50%;
+       float: left;
+       padding: 5px 10px;
+   }
+   
+   .bginput-T {
+       background-color: whitesmoke;
+       height: 70px;
+   }
+   
+   .input1-T {
+       width: 100%;
+       height: 150px;
+       background-color: whitesmoke;
+       padding: 20px;
+   }
+   
+   .btnT-1 {
+       background-color: black;
+       color: white;
+       position: relative;
+       height: 70px;
+       width: 200px;
+   }
+   
+   .container1 {
+       width: 40%;
+       max-width: 100%;
+       text-align: center;
+   }
+   
+   @media (max-width:480px) {
+       .ctnfont-T {
+           width: 100%;
+       }
+       .btnT-1 {
+           width: 150px;
+       }
+       .container-contactstockitst .row-contactstockitst .col-4 {
+           max-width: 100%;
+           -webkit-flex: 0 0 49%;
+           height: 250px;
+       }
+       .col-4 .inforstockitst {
+           height: 190px;
+       }
+       .ctnfont-T .row {
+           margin-top: 50px;
+       }
+   }
+   
+   .container-fluid-contactT {
+       background-color: rgb(243, 228, 201);
+       font-family: 'Montserrat', sans-serif;
+       text-align: center;
+   }
+   
+   .container-fluid-contactT h2 {
+       font-weight: 800;
+       letter-spacing: 7px;
+   }
+   
+   .container-fluid-contactT hr {
+       border-top: 5px solid black;
+       width: 40px;
+       margin-top: 40px;
+   }
+   
+   .inforstockitst {
+       box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
+       border-radius: 5px;
+       height: 140px;
+   }
+   
+   .animated:hover {
+       animation-duration: 1s;
+   }
+   
+   @keyframes pulse {
+       from {
+           -webkit-transform: scale3d(1, 1, 1);
+           transform: scale3d(1, 1, 1);
+       }
+       50% {
+           -webkit-transform: scale3d(1.05, 1.05, 1.05);
+           transform: scale3d(1.05, 1.05, 1.05);
+       }
+       to {
+           -webkit-transform: scale3d(1, 1, 1);
+           transform: scale3d(1, 1, 1);
+       }
+   }
+   
+   .pulse:hover {
+       animation-name: pulse;
+   }
+   
+   .containerimgmail {
+       position: relative;
+   }
+   
+   .overleyimgmail {
+       position: absolute;
+       bottom: 0;
+       left: 14px;
+       background-color: wheat;
+       width: 92.5%;
+       height: 0;
+       transition: .5s ease;
+       overflow: hidden;
+   }
+   
+   .containerimgmail:hover .overleyimgmail {
+       height: 35%;
+   }
+   
+   .img-circle {
+       object-fit: cover;
+   }
