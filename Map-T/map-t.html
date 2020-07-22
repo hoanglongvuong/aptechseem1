@@ -29,11 +29,68 @@
             });
         });
     </script>
-    <header class="nav-menu navbar-fixed-top ">
+    <header class="nav-menu navbar-fixed-top">
         <div class="container">
             <div class="row navbar-light" style="display: inline-block;">
-                <div class="nav-logo col-lg-4">
+                <div class="nav-logo col-lg-4" style="width: 80%;">
                     <a href="../Home Page/IndexHomePage.html"><img src="../Menu/image/your-logo-ig.PNG" style="width: 80%;"></a>
+                </div>
+                <div class="nav-small">
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="../Home Page/IndexHomePage.html">Explore</a>
+                        <a href="../Page About/indexabout.html">About</a>
+                        <a href="../Products/producst-T.html">Product</a>
+                        <a href="../Mail-T/mail-T.html">Contact</a>
+                        <a href="../Map-T/map-t.html"><i class="fas fa-map-marker-alt"></i></a>
+                        <a><i class="fa fa-user" onclick="document.getElementById('id01').style.display='block'" style="width: auto; font-size: 22px; color: black;"></i></a>
+                        <div class="modal" id="id01">
+                            <form class="modal-content animate">
+                                <div class="img-container">
+                                    <span class="close" onclick="document.getElementById('id01').style.display='none'">x</span>
+                                    <img src="../Image cho project/5a991c82be987_thumb900.png" class="avatar">
+                                </div>
+                                <div class="container pd-16">
+                                    <label><b>Username</b></label>
+                                    <input class="input-name" type="text" placeholder="Enter Username" required>
+                                    <label><b>Password</b></label>
+                                    <input class="input-psw" type="password" placeholder="Enter Password" required>
+                                    <button type="submit" class="btn-login">Login</button>
+                                    <label>
+                                            <input type="checkbox" checked="checked"> Remember me
+                                        </label>
+                                </div>
+                                <div class="container pd-16" style="background-color: #f1f1f1;">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password ?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                        <script>
+                            var modal = document.getElementById('id01');
+                            window.onclick = function(event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+
+                    <div id="main">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                    </div>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("mySidebar").style.width = "250px";
+                            document.getElementById("main").style.marginLeft = "250px";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("mySidebar").style.width = "0";
+                            document.getElementById("main").style.marginLeft = "0";
+                        }
+                    </script>
                 </div>
                 <div class="navbar-collapse col-lg-8" style="width: unset;">
                     <ul style="margin-top: 25px;">
@@ -56,8 +113,8 @@
                                         <input class="input-psw" type="password" placeholder="Enter Password" required>
                                         <button type="submit" class="btn-login">Login</button>
                                         <label>
-                                            <input type="checkbox" checked="checked"> Remember me
-                                        </label>
+                                                <input type="checkbox" checked="checked"> Remember me
+                                            </label>
                                     </div>
                                     <div class="container pd-16" style="background-color: #f1f1f1;">
                                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">Cancel</button>
